@@ -62,9 +62,35 @@ button{
     border: 2px solid red;
     position: absolute;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height:80%;
     width: 100%;
     margin-top: 50px;
 
+}
+#content>div:first-child{
+    border: 2px solid blue;
+    flex-grow: 2;
+
+}
+#content>div:last-child{
+    border: 2px solid purple;
+
+}
+#content>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#content>div:first-child>div:first-child{
+    flex-grow: 2;
+    border: 2px solid yellow;
+}
+#content>div:first-child>div:last-child{
+    flex-grow: 1;
+    border: 2px solid greenyellow;
+}
+.vihangaimg{
+    width: 350px;
+    margin-bottom: 100px;
 }
