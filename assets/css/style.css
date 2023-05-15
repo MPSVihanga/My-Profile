@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&family=Roboto:ital,wght@1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -59,7 +61,6 @@ button{
 /*--------------------------------------------------------------*/
 
 #content{
-    border: 2px solid red;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -69,12 +70,10 @@ button{
 
 }
 #content>div:first-child{
-    border: 2px solid blue;
     flex-grow: 2;
-
 }
 #content>div:last-child{
-    border: 2px solid purple;
+
 
 }
 #content>div{
@@ -83,14 +82,104 @@ button{
     justify-content: space-between;
 }
 #content>div:first-child>div:first-child{
-    flex-grow: 2;
-    border: 2px solid yellow;
 }
 #content>div:first-child>div:last-child{
-    flex-grow: 1;
-    border: 2px solid greenyellow;
+    flex-grow: 3;
 }
 .vihangaimg{
     width: 350px;
-    margin-bottom: 100px;
+    margin-left: 15px;
+
+
+}
+.imgdiv>div:first-child{ /*img color div*/
+    width: 380px;
+    height: 500px;
+    border-radius: 49% 51% 24% 76% / 64% 56% 44% 36%  ;
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    margin-top: 30px;
+    margin-right: 20px;
+    filter: opacity(90%);
+}
+.imgshadow{ /*img shadow div*/
+    width: 400px;
+    height: 530px;
+    border-radius: 49% 51% 24% 76% / 64% 56% 44% 36%  ;
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    filter: opacity(25%);
+    margin-top: -370px;
+    margin-right: 20px;
+    margin-left: -15px;
+}
+
+.contentvision>h1{
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 20px;
+    font-weight: 300;
+    font-size: 70px;
+    margin: -20px 0px 0px 200px;
+}
+.contentvision>h2{
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
+    font-weight: 300;
+    font-size: 35px;
+    margin: -15px 0px 0px 280px;
+}
+.contentpra>p {
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 18px 0px 0px 300px;
+}
+.contentmyname>h1{
+
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 8px;
+    font-weight: 300;
+    font-size: 30px;
+    padding: 0px 0px 0px 350px;
+}
+.contentmyname>h1>b{
+    font-size:30px;
+}
+.contentmyname>h1>i{
+    font-family: 'Pacifico', cursive;
+    background: #326699;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contentbtn input{
+    text-space: 10px;
+    width: 150px;
+    height: 50px;
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 8px;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow:  7px 7px 13px #1d3b59,
+    -7px -7px 13px #4791d9;
+}
+.contentbtn>input:first-child{
+    margin: 30px 0px 0px 350px;
+}
+.contentbtn>input:last-child{
+    margin: 30px 0px 0px 80px;
 }
