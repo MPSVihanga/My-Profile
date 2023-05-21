@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>MPS Vihanga | My Journey</title>
-    <link rel="icon" href="assets/logo/3BCFF5A3-AF3E-49F4-9D55-CC53B43A035F_1_201_a.jpeg">
+    <link rel="icon" href="logo/3BCFF5A3-AF3E-49F4-9D55-CC53B43A035F_1_201_a.jpeg">
+
+    <!--    <base href="http://www.mpsvihanha.com">
+          //Can use one host the url,then once the site load,
+            the browser download all the css,js files to run
+    -->
 
     <meta name="keywords" content="MPS Vihanga,Vihanga ">
     <meta name="description" content="Hello... This is My life Journey">
@@ -12,89 +17,102 @@
 
     <meta name="theme-color" content="#BC13FE">
 
-    <link href='assets/css/space.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' href='assets/css/space.css' type='text/css'>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/about.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/scroll-mouse.css" type="text/css">
 
 </head>
 <body>
-<main id="mainform">
-    <header id="header">
-        <nav class="navbar">
-            <div class="navdiv">
-                <div class="logo"><a href="#">SV</a> </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-
-                    <button>
-                        <img src="assets/icons/night-mode.png">
-                    </button>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
-
-<section id="stg1">
-
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-    <div id='horizon'>
-        <div class='glow'></div>
-    </div>
-    <div id='earth'></div>
-    <div >
-        <img class="earthman" src="assets/logo/man.png" >
-    </div>
-    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-    <div id="content">
-        <div >
-            <div class="contentvision">
-                <h1>VISIONS</h1>
-                <h2>Into REALITY ...</h2>
-            </div>
-            <div class="contentmyname">
-                <h1><b>Hello -------------</b> <br> My name is <i>MPS Vihanga</i></h1>
-            </div>
-            <div class="contentpra">
-                <p >
-                    As a Skilled Full-Stack Developer,<br>
-                    I am dedicated to turnig ideas into <br>
-                    innovative web applications,<br>
-                    Explore my latest projects and articles <br>
-                    showcasing my expertise in Web Development
-                </p>
-                <div class="contentbtn">
-                    <input type="button" value="Hire Me">
-                    <input type="button" value="Resume">
+<main>
+    <div class="wrapper">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#">SV</a>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <a href="#">HOME</a>
+                            <a href="#">ABOUT</a>
+                            <a href="#">SERVICES</a>
+                            <a href="#">PORTFOLIO</a>
+                            <a href="#">CONTACT</a>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-        <div class="imgdiv">
-            <div> <!--color to shadow-->
-                <img class="vihangaimg" src="assets/Vihanga/vihanga.png " >
-                <div class="imgshadow"> <!--shadow-->
+        </header>
+
+        <div class="banner-area">
+            <div class="mainflex">
+                <div class="mainflex-content">
+                    <h2>VISIONS</h2>
+                    <h4>Into</h4>
+                    <h3>REALITY</h3>
+                </div>
+                <div class="mainflex-img">
+                    <div class="spaceship-container">
+                        <img width="160px" height="160px" src="assets/logo/Spaceship.png">
+                    </div>
                 </div>
             </div>
 
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            <div id='horizon'></div>
+            <div id='earth'>
+                <div class="scroll-mouse">
+                    <div class="mouse"></div>
+                    <p>Scroll</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
 
-        <!--<div id='title'>
-            VISIONS
+    <section> <!--About Me-->
+        <div class="content-area">
+            <div class="wrapper">
+                <h2>Content Area</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ad aliquam asperiores atque autem consequatur consequuntur culpa
+                    dicta dolores eligendi esse eum in incidunt ipsum itaque laboriosam
+                    laudantium maxime modi necessitatibus obcaecati perspiciatis praesentium
+                    quae quidem quo reprehenderit repudiandae soluta, tempora totam
+                    vero voluptates voluptatum. Ad aliquam delectus necessitatibus nulla voluptates!</p>
+            </div>
         </div>
-        <div id='subtitle'>
-            <span>DONT</span>
-            <span>LET</span>
-            <span>GO</span>
-         </div>-->
-</section>
+    </section>
+
+
+    <footer>
+        <!-- <div > &lt;!&ndash;img&ndash;&gt;
+                    <div id="main-img-container">
+                        <div >
+                            <img id="pentagon-img" src="assets/Vihanga/vihanga.png">
+                            <div id="img-skill-container">
+                                &lt;!&ndash;<div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>&ndash;&gt;
+                            </div>
+
+                        </div>
+                    </div>
+                </div>-->
+
+
+
+        <!--<h2><b>Helllo &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</b> <br>My name is <i>MPS Vihanga</i></h2>
+                                <article>As a skilled Full-stackk developer,<br>
+                                   I am dedicated to turning ideas into innovative Web applications.<br>
+                                   Explore my latest projects and articles,<br>
+                                   showcasing my expertise in Web development.
+                               </article>-->
+    </footer>
 </main>
 </body>
 </html>

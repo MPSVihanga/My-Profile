@@ -1,26 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin);
-body {
+.scroll-mouse {
+    position: absolute;
+    margin: 50px 0 0 45%;
+    width: 130px;
+    height: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #222a30;
+    background: radial-gradient(ellipse at bottom, #0f1319 0%, #0c0f16 100%);
 }
-
 p {
-    margin-top: 50px;
     font-family: "Cabin", sans-serif;
     letter-spacing: 12px;
     text-indent: 12px;
-    color: #ffffff;
+    color: #01EFFF;
+    margin: 100px 0 0 0;
     -webkit-animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
     animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
 }
 
 .mouse {
+    position: absolute;
+    margin: -50px 0 0 0;
     background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
-    position: relative;
     width: 52px;
     height: 88px;
     border-radius: 100px;
@@ -40,7 +43,7 @@ p {
 .mouse:before {
     width: 46px;
     height: 82px;
-    background-color: #222a30;
+    background-color: #222a30;background: radial-gradient(ellipse at bottom, #0f1319 0%, #0c0f16 100%);
     border-radius: 100px;
 }
 .mouse:after {
@@ -60,35 +63,35 @@ p {
         background-position: 0% 0%;
     }
     21% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
     }
     29.99% {
         background-color: #ffffff;
         background-position: 0% 0%;
     }
     30% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
         background-position: 0% 100%;
     }
     50% {
         background-position: 0% 0%;
     }
     51% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
     }
     59% {
         background-color: #ffffff;
         background-position: 0% 0%;
     }
     60% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
         background-position: 0% 100%;
     }
     80% {
         background-position: 0% 0%;
     }
     81% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
     }
     90%, 100% {
         background-color: #ffffff;
@@ -103,35 +106,35 @@ p {
         background-position: 0% 0%;
     }
     21% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
     }
     29.99% {
         background-color: #ffffff;
         background-position: 0% 0%;
     }
     30% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
         background-position: 0% 100%;
     }
     50% {
         background-position: 0% 0%;
     }
     51% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
     }
     59% {
         background-color: #ffffff;
         background-position: 0% 0%;
     }
     60% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
         background-position: 0% 100%;
     }
     80% {
         background-position: 0% 0%;
     }
     81% {
-        background-color: #4e5559;
+        background-color: #01EFFF;
     }
     90%, 100% {
         background-color: #ffffff;
@@ -355,19 +358,19 @@ p {
 }
 @-webkit-keyframes colorText {
     21% {
-        color: #4e5559;
+        color: #01EFFF;
     }
     30% {
         color: #ffffff;
     }
     51% {
-        color: #4e5559;
+        color: #01EFFF;
     }
     60% {
         color: #ffffff;
     }
     81% {
-        color: #4e5559;
+        color: #01EFFF;
     }
     90% {
         color: #ffffff;
@@ -375,19 +378,19 @@ p {
 }
 @keyframes colorText {
     21% {
-        color: #4e5559;
+        color: #01EFFF;
     }
     30% {
         color: #ffffff;
     }
     51% {
-        color: #4e5559;
+        color: #01EFFF;
     }
     60% {
         color: #ffffff;
     }
     81% {
-        color: #4e5559;
+        color: #01EFFF;
     }
     90% {
         color: #ffffff;

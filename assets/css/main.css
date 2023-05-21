@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    border: 2px solid yellow;
+    height: 80px;
+    background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    opacity: 80%;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 70px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 55px;
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-linear-gradient(white, #dbdde0, #dbdde0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+}
+nav{
+    float: right;
+    line-height: 70px;
+}
+nav a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    font-size: 18px;
+    margin: 0 10px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+nav a:hover{
+    color: #01EFFF;
+}
+.banner-area{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
+}
+
+.mainflex{
+    position: absolute;
+    border: 2px solid red;
+    width: 100%;
+    height: 600px;
+    margin: 80px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.mainflex-content{
+    flex-grow: 1;
+    border: 2px solid yellow;
+}
+.mainflex-img{
+    flex-grow: 1;
+    border: 2px solid blue ;
+}
+.mainflex-content>h2{
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 50px;
+    margin: 20px 0 0 -350px;
+    left: 0;
+    font-size: 130px;
+    font-weight: lighter;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    -webkit-filter: drop-shadow(25px 25px 12px #38495a);
+}
+.mainflex-content>h4{
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 30px;
+    margin: -15px 0 0 -130px;
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
+.mainflex-content>h3{
+    background: -webkit-linear-gradient(white, #dbdde0, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 60px;
+    margin: -20px 0 0 30px;
+    font-size: 120px;
+    font-weight: lighter;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    -webkit-filter: drop-shadow(25px 25px 12px #38495a);
+}
+.spaceship-container{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin: 30px 0 0 220px;
+}
+
+
+/*#main-img-container {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 44% 56% 32% 68% / 60% 34% 66% 40% ;
+    border-radius: 20px 20px 20px 0;
+    background: linear-gradient(to top right, #060631,#0a0c18, #1a1ace);
+    margin: 15px 0px 0px 80px;
+}
+#main-img-container>div{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    margin: 20px 0 0 -22px;
+    border-radius: 20px 20px 20px 0;
+    background: radial-gradient(ellipse at bottom, #0a0c18 0%, #060631 100%);
+    filter: drop-shadow(5px 10px 7px #0c1116);
+}
+#pentagon-img{
+    position: absolute;
+    width: 240px;
+    height: 250px;
+    margin: 60px 0 0 3px;
+    mask-image:url("../Vihanga/mask-image.png");
+    -webkit-mask-image:url("../Vihanga/mask-image.png");
+    mask-position: bottom;
+    -webkit-mask-position: bottom;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size:280px ;
+    -webkit-mask-size: 280px;
+}
+#img-skill-container{
+    border: 2px solid aqua;
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    margin: 100px 0 0 200px;
+}*/

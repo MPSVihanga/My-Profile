@@ -1,0 +1,20 @@
+.content-area{
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    background: radial-gradient(ellipse at bottom, #0C0F15 0%, #0C0F15 100%);
+}
+.content-area h2{
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+.content-area p{
+    padding: 2% 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 30px;
+    color: white;
+}
