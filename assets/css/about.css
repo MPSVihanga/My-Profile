@@ -101,8 +101,33 @@
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
+.links-container{
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    bottom: 0;
+    margin: 0 0 30px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links-container>div>a {
+    width: 35px;
+    height: 35px;
+    margin: 20px 0 0 0;
+}
+.links-container>div>a>img{
+    width: 30px;
+    height: 30px;
+    background: #01EFFF;
+    object-fit: contain;
+}
+.links-container>div:nth-child(3)>a>img{
+    object-fit: cover;
+    margin-top: 5px;
+    width: 30px;
+    height: 24.4px;
 
-
+}
 
 
 
