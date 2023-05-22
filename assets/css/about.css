@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 .content-area{
     width: 100%;
     height: 1500px;
@@ -10,7 +17,7 @@
 }
 .about-me-container{
     position: absolute;
-    border: 2px white;
+    border: 2px #01EFFF;
     border-style: solid solid solid none;
     width: 85%;
     height: 800px;
@@ -20,12 +27,26 @@
     justify-content: space-between;
 }
 .profile-img-container{
-    border: 2px solid red;
-    flex-grow: 1;
+    flex-grow: 1.2;
 }
 .my-content{
     flex-grow: 2;
     border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.about-me-tag{
+    flex-grow: 0.5;
+    border: 2px solid palegoldenrod;
+}
+.about-me-content{
+    flex-grow: 1.5;
+    border: 2px solid firebrick;
+}
+.skill-anim-container{
+    flex-grow: 1.5;
+    border: 2px solid magenta;
 }
 .profile-img-shadow{
     position: absolute;
@@ -128,9 +149,52 @@
     height: 24.4px;
 
 }
+.about-me-tag>h1{
+    position: absolute;
+    margin: 15px 0 0 0;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.about-me-content>h2:first-child{
+    position: absolute;
+    margin: 0 0 0 50px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.about-me-content>h2:nth-child(2){
+    position: absolute;
+    margin: 50px 0 0 80px;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.about-me-content>h2:nth-child(2)>b{
+    font-size: 42px;
+    font-family: 'Courgette', cursive;
+    background: -webkit-linear-gradient(#01EFFF, #06b5c4, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-me-content>h2:last-child{
+    position: absolute;
+    margin: 120px 0 0 60px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.about-me-content>h2:last-child>b{
 
-
-
+}
 
 
 
