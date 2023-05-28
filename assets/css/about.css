@@ -27,7 +27,7 @@
     justify-content: space-between;
 }
 .profile-img-container{
-    flex-grow: 1.2;
+    flex-grow: 1.3;
 }
 .my-content{
     flex-grow: 2;
@@ -38,16 +38,13 @@
 }
 .about-me-tag{
     flex-grow: 0.5;
-    border: 2px solid palegoldenrod;
+    border: 2px solid greenyellow;
 }
 .about-me-content{
-    flex-grow: 1.5;
+    flex-grow: 1;
     border: 2px solid firebrick;
 }
-.skill-anim-container{
-    flex-grow: 1.5;
-    border: 2px solid magenta;
-}
+
 .profile-img-shadow{
     position: absolute;
     background: #01EFFF;
@@ -79,7 +76,6 @@
     mask-size:450px ;
     -webkit-mask-size: 450px;
 }
-
 .quality-container{
     position: absolute;
     margin: 120px 0 0 310px;
@@ -149,6 +145,7 @@
     height: 24.4px;
 
 }
+
 .about-me-tag>h1{
     position: absolute;
     margin: 15px 0 0 0;
@@ -185,15 +182,40 @@
 }
 .about-me-content>h2:last-child{
     position: absolute;
-    margin: 120px 0 0 60px;
+    margin: 110px 0 0 110px;
     color: white;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 15px;
 }
 .about-me-content>h2:last-child>b{
-
+    font-size: 55px;
+}
+.skill-anim-container{
+    flex-grow: 2;
+    border: 2px solid magenta;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.skill-content-01{
+    border: 2px solid pink;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 100px;
+    padding: 100px 0 0 100px;
+    width: 240px;
+}
+.skill-content-02{
+    flex-grow: 1;
+    border: 2px solid deeppink;
+}
+.skill-content-01>div{
+    background: yellow;
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -205,17 +227,3 @@
 
 
 
-.content-area h2{
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 2px;
-    padding-top: 30px;
-    font-size: 40px;
-    margin: 0;
-    color: white;
-}
-.content-area p{
-    padding: 2% 0;
-    font-family: "Poppins", sans-serif;
-    line-height: 30px;
-    color: white;
-}
