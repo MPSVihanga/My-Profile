@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin);
 .scroll-mouse {
     position: absolute;
-    margin: 50px 0 0 45%;
-    width: 130px;
-    height: 130px;
+    margin: 2% 0 0 45%;
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,21 +11,21 @@
     background: radial-gradient(ellipse at bottom, #0f1319 0%, #0c0f16 100%);
 }
 p {
+    position: absolute;
     font-family: "Cabin", sans-serif;
     letter-spacing: 12px;
-    text-indent: 12px;
+    text-indent: 10px;
     color: #01EFFF;
-    margin: 100px 0 0 0;
+    margin: 300% 0 0 0;
     -webkit-animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
     animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
 }
 
 .mouse {
     position: absolute;
-    margin: -50px 0 0 0;
     background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
-    width: 52px;
-    height: 88px;
+    width: 42px;
+    height: 76px;
     border-radius: 100px;
     background-size: 100% 200%;
     -webkit-animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
@@ -41,15 +41,15 @@ p {
     margin: auto;
 }
 .mouse:before {
-    width: 46px;
-    height: 82px;
+    width: 36px;
+    height: 66px;
     background-color: #222a30;background: radial-gradient(ellipse at bottom, #0f1319 0%, #0c0f16 100%);
     border-radius: 100px;
 }
 .mouse:after {
     background-color: #ffffff;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 100%;
     -webkit-animation: trackBallSlide 5s linear infinite;
     animation: trackBallSlide 5s linear infinite;

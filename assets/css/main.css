@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 html::-webkit-scrollbar{
-    width: 10px;
+    width: 6px;
     background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
 }
 html::-webkit-scrollbar-thumb{
@@ -56,7 +56,7 @@ nav a{
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     letter-spacing: 3px;
-    font-size: 17px;
+    font-size: 16px;
     margin: 0 10px;
     color: white;
 
@@ -74,19 +74,17 @@ nav a:hover{
     height: 100vh;
     display: flex;
     flex-direction: column;
-
 }
 .banner-area{
     position: relative;
     width: 100%;
     height: auto;
-    flex-grow: 1;
+    flex-grow: 2;
     border: 2px solid aqua;
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
 }
-
 .banner-area>div:first-child{
     flex-grow: 2;
     border: 2px solid red;
@@ -98,99 +96,69 @@ nav a:hover{
     flex-grow: 1;
     border: 2px solid yellow;
 }
+
+
 .main-content>div:first-child{
     flex-grow: 1;
     border: 2px solid purple;
 }
 .main-content>div:nth-child(2){
-    flex-grow: 1;
+    flex-grow: 0.5;
     border: 2px solid white;
 }
 .main-content>div:last-child{
     flex-grow: 1;
     border: 2px solid purple;
 }
-.earthNhorizon{
-    width: 100%;
-    height: auto;
-    flex-grow: 0.6;
-    border: 2px solid blue;
-}
 
-/*.main-content{
-    width: 100%;
-    height: inherit;
-
-    border: 2px yellow dashed;
-
-}
-.main-img{
-    width: 100%;
-    height: inherit;
-    border: 2px green dashed;
-
-}*/
-
-
-
-
-/*.mainflex-content>div:first-child{
-    flex-grow: 1;
-    border: 2px solid green;
-}
-.mainflex-content>div:nth-child(2){
-    flex-grow: 1;
-    border: 2px solid pink;
-}
-.mainflex-content>div:nth-child(3){
-    flex-grow: 1;
-    border: 2px solid darkorange;
-}
-.mainflex-content>div:last-child{
-    flex-grow: 1;
-    border: 2px solid firebrick;
-}*/
-
-
-
-.mainflex-content>h2{
+.main-content>div:first-child>h2{
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 50px;
-    margin: 20px 0 0 -350px;
-    left: 0;
-    font-size: 50px;
-    font-weight: lighter;
+    font-size: 70px;
+    font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    -webkit-filter: drop-shadow(25px 25px 12px #38495a);
+    -webkit-filter: drop-shadow(25px 25px 5px #38495a);
 }
-.mainflex-content>h4{
+.main-content>div:nth-child(2)>h3{
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 20px;
-    margin: -15px 0 0 -130px;
-    font-size: 30px;
+    font-size: 50px;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
-.mainflex-content>h3{
+.main-content>div:last-child>h2{
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 60px;
-    margin: -20px 0 0 30px;
-    font-size: 50px;
-    font-weight: lighter;
+    letter-spacing: 50px;
+    font-size: 70px;
+    font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    -webkit-filter: drop-shadow(25px 25px 12px #38495a);
+    -webkit-filter: drop-shadow(25px 25px 5px #38495a);
 }
+
 .spaceship-container{
     position: absolute;
     width: 160px;
     height: 160px;
-    margin: 40px 0 0 180px;
+    border: 2px solid red;
 }
+
+
+.earthNhorizon{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    flex-grow: 1;
+    border: 2px solid blue;
+}
+
+
+
+
