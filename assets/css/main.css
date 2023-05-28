@@ -59,10 +59,12 @@ nav a{
     font-size: 17px;
     margin: 0 10px;
     color: white;
-    transition: all 0.3s ease ;
+
 }
 nav a:hover{
+    transition: all 0.3s ease;
     color: #01EFFF;
+    border-bottom: 2px solid #01EFFF;
 }
 /*  ----- Nav Bar End -------  */
 
@@ -86,14 +88,27 @@ nav a:hover{
 }
 
 .banner-area>div:first-child{
-
     flex-grow: 2;
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .banner-area>div:last-child{
-
     flex-grow: 1;
     border: 2px solid yellow;
+}
+.main-content>div:first-child{
+    flex-grow: 1;
+    border: 2px solid purple;
+}
+.main-content>div:nth-child(2){
+    flex-grow: 1;
+    border: 2px solid white;
+}
+.main-content>div:last-child{
+    flex-grow: 1;
+    border: 2px solid purple;
 }
 .earthNhorizon{
     width: 100%;
