@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 html::-webkit-scrollbar{
-    width: 6px;
+    width: 7px;
     background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
 }
 html::-webkit-scrollbar-thumb{
@@ -116,11 +116,11 @@ nav a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 50px;
-    font-size: 70px;
+    font-size: 75px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    -webkit-filter: drop-shadow(25px 25px 5px #38495a);
+    -webkit-filter: drop-shadow(25px 25px 7px #38495a);
 }
 .main-content>div:nth-child(2)>h3{
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
@@ -136,11 +136,11 @@ nav a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 50px;
-    font-size: 70px;
+    font-size: 75px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    -webkit-filter: drop-shadow(25px 25px 5px #38495a);
+    -webkit-filter: drop-shadow(25px 25px 7px #38495a);
 }
 
 .spaceship-container{
