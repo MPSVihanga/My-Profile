@@ -27,7 +27,7 @@ body{
 }
 header{
     height: 60px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
     width: 100%;
     z-index: 12;
@@ -71,92 +71,200 @@ nav a:hover{
 /*  ----- Main Page Start -------  */
 .main-page{
     width: 100%;
-    height: 100vh;
+    height: 730px;
     display: flex;
     flex-direction: column;
 }
 .banner-area{
     position: relative;
     width: 100%;
-    height: auto;
-    flex-grow: 2;
-    border: 2px solid aqua;
+    flex-grow: 1;
+    /*border: 2px solid aqua;*/
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
+
+
 }
 .banner-area>div:first-child{
     flex-grow: 2;
-    border: 2px solid red;
+    /*border: 2px solid red*/;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 .banner-area>div:last-child{
     flex-grow: 1;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
 }
 
 
 .main-content>div:first-child{
-    flex-grow: 1;
-    border: 2px solid purple;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 0.5;
+    /*border: 2px solid purple;*/
 }
 .main-content>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 0.5;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
 }
 .main-content>div:last-child{
-    flex-grow: 1;
-    border: 2px solid purple;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 0.5;
+    /*border: 2px solid purple;*/
 }
 
 .main-content>div:first-child>h2{
+    margin: 40px 0 0 200px;
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 50px;
-    font-size: 75px;
+    font-size: 85px;
+    /*border: 1px solid red*/;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    -webkit-filter: drop-shadow(25px 25px 7px #38495a);
+    -webkit-filter: drop-shadow(25px 25px 6px #38495a);
+
+
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: animVision;
 }
+@keyframes animVision {
+    0%	, 15% {
+        transform: translateY(-26px);
+        opacity: 0;
+    }
+    35%, 80% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    92%, 100% {
+        transform: translateY(-4px);
+        opacity: 0;
+    }
+}
+
+
 .main-content>div:nth-child(2)>h3{
+    margin: 0 0 10px 0;
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 20px;
-    font-size: 50px;
+    font-size: 65px;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
+    /*border: 1px solid red;*/
+
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: animInto;
 }
+@keyframes animInto {
+    0%	, 25% {
+        transform: translateY(-26px);
+        opacity: 0;
+    }
+    45%, 80% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    92%, 100% {
+        transform: translateY(-4px);
+        opacity: 0;
+    }
+}
+
+
+
 .main-content>div:last-child>h2{
+    margin: 0 200px 50px 0;
     background: -webkit-linear-gradient(white, #dbdde0, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 50px;
-    font-size: 75px;
+    font-size: 85px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
-    -webkit-filter: drop-shadow(25px 25px 7px #38495a);
+    -webkit-filter: drop-shadow(25px 25px 6px #38495a);
+    /*border: 1px solid red;*/
+
+
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: animReality;
+}
+@keyframes animReality {
+    0%	, 35% {
+        transform: translateY(-26px);
+        opacity: 0;
+    }
+    55%, 80% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    92%, 100% {
+        transform: translateY(-4px);
+        opacity: 0;
+    }
 }
 
 .spaceship-container{
     position: absolute;
     width: 160px;
     height: 160px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
+    margin-top: 50px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: animSpaceShip;
 }
+@keyframes animSpaceShip {
+    0%	 {
+        transform: translateX(-1700px) translateY(-100px);
+        opacity: 0;
+    }
+    40%{
+        transform: translateX(-60px) translateY(150px);
+        opacity: 1;
+    }
+    60%{
+        transform: translateX(50px) translateY(100px);
+        opacity: 1;
+    }
+    80%{
+        transform: translateX(-70px) translateY(50px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100px) translateY(0);
+        opacity: 0;
+    }
 
+
+}
 
 .earthNhorizon{
     width: 100%;
     height: 20%;
     position: relative;
     flex-grow: 1;
-    border: 2px solid blue;
 }
 
 
