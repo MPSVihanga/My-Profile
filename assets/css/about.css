@@ -7,9 +7,9 @@
 }
 #about-me{
     width: 100%;
-    height: 100vh;
+    height: 690px;
     position: relative;
-    background: radial-gradient(ellipse at bottom, #0C0F15 0%, #0C0F15 100%);
+    background: black;
 }
 .wrapper{
     width: 100%;
@@ -19,9 +19,9 @@
     position: absolute;
     border: 2px #01EFFF;
     border-style: solid solid solid none;
-    width: 85%;
-    height: 800px;
-    margin: 100px 0 0 150px;
+    width: 95%;
+    height: 600px;
+    margin: 65px 0 0 60px;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
@@ -30,43 +30,45 @@
     flex-grow: 1.3;
 }
 .my-content{
-    flex-grow: 2;
-    border: 2px solid blue;
+    width: 60%;
+    /*border: 2px solid blue;*/
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 .about-me-tag{
     flex-grow: 0.5;
-    border: 2px solid greenyellow;
+    /*border: 2px solid greenyellow;*/
+    display: flex;
+    justify-content: flex-end;
 }
 .about-me-content{
     flex-grow: 1;
-    border: 2px solid firebrick;
+    /*border: 2px solid firebrick;*/
 }
 
 .profile-img-shadow{
     position: absolute;
     background: #01EFFF;
-    margin: 50px 0 0 -70px;
-    width: 400px;
-    height: 550px;
+    margin: 20px 0 0 -30px;
+    width: 380px;
+    height: 450px;
     clip-path: polygon(0 0,70% 0,50% 100%,0 100%);
     border-radius: 20px 0 0 20px/20px 0 0 20px;
 }
 .profile-img{
     position: absolute;
     background: radial-gradient(ellipse at bottom, #1a202d 0%, #121a26 100%);;
-    margin: 85px 0 0 -30px;
-    width: 380px;
-    height: 550px;
+    margin: 35px 0 0 -15px;
+    width: 330px;
+    height: 460px;
     border-radius: 20px 20px 0 20px/20px 20px 0 20px;
 }
 .vihanga-img{
     position: absolute;
-    width: 380px;
-    height: 380px;
-    margin: 70px 0 0 -180px;
+    width: 330px;
+    height: 330px;
+    margin: 70px 0 0 -150px;
     mask-image:url("../Vihanga/mask-image.png");
     -webkit-mask-image:url("../Vihanga/mask-image.png");
     mask-position: bottom;
@@ -78,25 +80,26 @@
 }
 .quality-container{
     position: absolute;
-    margin: 120px 0 0 310px;
+    margin: 20px 0 0 280px;
     width: 250px;
-    height: 620px;
+    height: 550px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    /*border: 2px solid red;*/
 }
 .quality-container>div{
     border: #01EFFF 1px;
     border-style: none none none solid;
     width: 245px;
-    height: 80px;
+    height: 60px;
 }
 .quality-plus-container {
     position: absolute;
     background: #01EFFF;
     width: 25px;
     height: 25px;
-    margin: 28px 0 0 -13px;
+    margin: 18px 0 0 -13px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -109,21 +112,22 @@
     flex-direction: column;
     width: 220px;
     height: 75px;
-    margin: 0 0 0 20px;
+    margin: -10px 0 0 20px;
     padding-top: 15px;
     color: white;
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
 }
 .links-container{
     position: absolute;
+    /*border: 2px solid red;*/
     width: 280px;
-    height: 100px;
+    height: 50px;
     bottom: 0;
-    margin: 0 0 30px 10px;
+    margin: 0 0 30px -20px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -148,18 +152,18 @@
 
 .about-me-tag>h1{
     position: absolute;
-    margin: 15px 0 0 0;
+    margin: 0 0 0 0;
     color: white;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 15px;
 }
 .about-me-content>h2:first-child{
     position: absolute;
-    margin: 0 0 0 50px;
+    margin: 10px 0 0 50px;
     color: white;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 15px;
@@ -168,58 +172,352 @@
     position: absolute;
     margin: 50px 0 0 80px;
     color: white;
-    font-size: 34px;
+    font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 15px;
 }
 .about-me-content>h2:nth-child(2)>b{
-    font-size: 42px;
+    font-size: 30px;
     font-family: 'Courgette', cursive;
     background: -webkit-linear-gradient(#01EFFF, #06b5c4, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.about-me-content>h2:last-child{
+.anim-text{
     position: absolute;
-    margin: 110px 0 0 110px;
+    margin: 90px 0 0 90px;
     color: white;
-    font-size: 40px;
+    font-size: 26px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
 }
-.about-me-content>h2:last-child>b{
-    font-size: 55px;
+.anim-text>b{
+    font-size: 38px;
 }
+
+.anim-text b::before{
+    content: "Web Developer";
+    color: #01EFFF;
+    animation: words 20s infinite;
+}
+
+.anim-text b::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    border-left: 2px solid #01EFFF;
+    right: -8px;
+    background-color: black;
+    animation: cursor .8s infinite, typing 20s steps(25) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #01EFFF;
+    }
+}
+@keyframes words {
+    0%,20%{
+        content: "Web Developer";
+    }
+    21%,40%{
+        content: "Android Developer";
+    }
+    41%,60%{
+        content: "Software Engineer";
+    }
+    61%,80%{
+        content: "UI/UX Designer";
+    }
+    81%,100%{
+        content: "Database Management";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: 95%;
+    }
+}
+
+
 .skill-anim-container{
     flex-grow: 2;
-    border: 2px solid magenta;
+    /*border: 2px solid magenta;*/
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.skill-content-01{
-    border: 2px solid pink;
+.skill-anim-container>div:first-child{
     flex-grow: 1;
+    /*border: 2px solid white;*/
     display: flex;
-    justify-content: space-between;
-    margin: 0 0 0 100px;
-    padding: 100px 0 0 100px;
-    width: 240px;
+    flex-direction: column;
 }
-.skill-content-02{
+.anim-skills>div:first-child{
     flex-grow: 1;
-    border: 2px solid deeppink;
+    /*border: 2px solid red;*/
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
 }
-.skill-content-01>div{
-    background: yellow;
-    width: 150px;
-    height: 150px;
+.anim-skills>div:first-child>div{
+    /*border: 1px solid hotpink;*/
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-color{
+    color: #01EFFF;
+    background-color: #01EFFF;
 }
 
 
+.skill-anim-container>div:last-child{
+    flex-grow: 1;
+    /*border: 2px solid blue;*/
+}
 
+.skill-content-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: flex-start;
+
+}
+
+
+.button-hover{
+    width: 180px;
+    height: 50px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    color: #01EFFF;
+    border:1.5px solid #01EFFF;
+    border-radius: 5px;
+    letter-spacing: 5px;
+}
+.button-hover:focus{
+    outline: none;
+}
+.button-hover:hover{
+    border: none;
+    transition: 0.3s ease 0.64s;
+    background-color: #02edf6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #02edf6,  0px 0px 16px #02edf6,  0px 0px 75px #02edf6;
+    color: #333;
+}
+span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, transparent, #02edf6);
+    transition: 0.2s ease;
+}
+.button-hover:hover span:nth-child(1){
+    left: 0;
+}
+span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(-90deg, transparent, #02edf6);
+    transition: 0.2s ease 0.4s;
+}
+.button-hover:hover span:nth-child(3){
+    right: 0;
+}
+span:nth-child(2){
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(transparent, #02edf6);
+    transition: 0.2s ease 0.2s;
+}
+.button-hover:hover span:nth-child(2){
+    top: 0;
+}
+span:nth-child(4){
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(360deg, transparent, #02edf6);
+    transition: 0.2s ease 0.6s;
+}
+.button-hover:hover span:nth-child(4){
+    bottom: 0;
+}
+
+.anim-div01{
+    width: 100px;
+    height: 100px;
+    transition: all 0.2s ease;
+    animation: div1 20s ease infinite;
+}
+@keyframes div1 {
+    0%,20%{
+        background-image: url("../icons/html-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    21%,40%{
+        background-image: url("../icons/sass-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    41%,60%{
+        background-image: url("../icons/java-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    61%,80%{
+        background-image: url("../icons/tailwindcss-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    81%,100%{
+        background-image: url("../icons/typescript-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.anim-div02{
+    transition: all 1s ease;
+    animation: div2 20s ease infinite;
+}
+@keyframes div2 {
+    0%,20%{
+        background-image: url("../icons/css-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    21%,40%{
+        background-image: url("../icons/jquery-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    41%,60%{
+        background-image: url("../icons/mysql-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    61%,80%{
+        background-image: url("../icons/react-native-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    81%,100%{
+        background-image: url("../icons/git-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.anim-div03{
+    transition: all 1s ease;
+    animation: div3 20s ease infinite;
+}
+@keyframes div3 {
+    0%,20%{
+        background-image: url("../icons/javascript-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    21%,40%{
+        background-image: url("../icons/angular-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    41%,60%{
+        background-image: url("../icons/spring-boot-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    61%,80%{
+        background-image: url("../icons/docker-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    81%,100%{
+        background-image: url("");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.anim-div04{
+    transition: all 1s ease;
+    animation: div4 20s ease infinite;
+}
+
+@keyframes div4 {
+    0%,20%{
+        background-image: url("../icons/bootstrap-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    21%,40%{
+        background-image: url("../icons/php-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    41%,60%{
+        background-image: url("../icons/firebase-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    61%,80%{
+        background-image: url("../icons/android-70.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    81%,100%{
+        background-image: url("");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
 
 
 
