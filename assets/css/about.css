@@ -18,11 +18,11 @@
 .about-me-container{
     position: absolute;
     border: 2px #01EFFF;
-    border-style: solid solid solid none;
+    border-style: solid solid none none;
+    border-radius: 0 20px 0 0;
     width: 95%;
     height: 600px;
     margin: 65px 0 0 60px;
-    border-radius: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -198,9 +198,9 @@
 }
 
 .anim-text b::before{
-    content: "Web Developer";
+    content: "";
     color: #01EFFF;
-    animation: words 20s infinite;
+    animation: words 12s infinite;
 }
 
 .anim-text b::after{
@@ -211,7 +211,7 @@
     border-left: 2px solid #01EFFF;
     right: -8px;
     background-color: black;
-    animation: cursor .8s infinite, typing 20s steps(25) infinite;
+    animation: cursor 8s infinite, typing 20s steps(20) infinite;
 }
 
 @keyframes cursor {
@@ -220,21 +220,16 @@
     }
 }
 @keyframes words {
-    0%,20%{
+    0%,35%{
         content: "Web Developer";
     }
-    21%,40%{
+    36%,70%{
         content: "Android Developer";
     }
-    41%,60%{
-        content: "Software Engineer";
-    }
-    61%,80%{
-        content: "UI/UX Designer";
-    }
-    81%,100%{
+    71%,100%{
         content: "Database Management";
     }
+
 }
 
 @keyframes typing {
@@ -269,7 +264,7 @@
 }
 .anim-skills>div:first-child>div{
     /*border: 1px solid hotpink;*/
-    width: 100px;
+    width: 70px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -370,8 +365,6 @@ span:nth-child(4){
 }
 
 .anim-div01{
-    width: 100px;
-    height: 100px;
     transition: all 0.2s ease;
     animation: div1 20s ease infinite;
 }
