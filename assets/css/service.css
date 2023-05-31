@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.service-bg{
+    position: relative;
+    width: 100%;
+    height: 670px;
+    /*background-color: #000000;*/
+    background-image: url("../logo/building-rocket.png");
+    background-size: 45% 60%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.bg-service-container{
+    position: absolute;
+    border: 2px solid #01EFFF;
+    width: 96%;
+    height: 90%;
+    margin: 60px 0 0 40px;
+    border-radius: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.bg-service-container>div:first-child{
+    border: 2px solid red;
+    flex-grow: 0.1;
+    display: flex;
+    justify-content: flex-end;
+}
+.bg-service-container>div:first-child>h1{
+    font-size: 45px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.service-content{
+    border: 2px solid blue;
+    flex-grow: 1.9;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.service-content>div:first-child{
+    border: 2px solid red;
+    flex-grow: 1;
+}
+.service-content>div:last-child{
+    flex-grow: 1;
+    border: 2px solid purple;
+}
