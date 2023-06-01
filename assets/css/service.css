@@ -7,53 +7,251 @@
     font-family: "Poppins", sans-serif;
 }
 .service-bg{
-    position: relative;
     width: 100%;
-    height: 670px;
+    height: 700px;
     background-color: #000000;
     background-image: url("../logo/building-rocket.png");
-    background-size: 35% 55%;
+    background-size: 45% 80%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position:center top;
 }
 .bg-service-container{
-    position: absolute;
+    position: relative;
     border: 2px #01EFFF;
     border-style: solid solid none none;
     border-radius: 0 20px 0 0;
     width: 96%;
-    height: 95%;
-    margin: 65px 0 0 40px;
+    height: 650px;
+    left: 40px;
+    top: 65px;
     display: flex;
     flex-direction: column;
 
 }
 .bg-service-container>div:first-child{
-    border: 2px solid red;
-    flex-grow: 0.1;
+    /*border: 2px solid red;*/
+    flex-grow: 0;
     display: flex;
     justify-content: flex-end;
 }
+.service-content{
+    /*border: 2px solid blue;*/
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
 .bg-service-container>div:first-child>h1{
+    /*border: 2px solid red;*/
     font-size: 48px;
     color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 15px;
 }
-.service-content{
-    border: 2px solid blue;
-    flex-grow: 1.9;
+
+.service-content>div:first-child{ /*Card Container*/
+    /*border: 2px solid yellow;*/
+    flex-grow: 3;
+}
+.service-content>div:last-child{ /*more Info container*/
+    border: 2px solid aquamarine;
+    flex-grow: 1;
+}
+.card-container{
+    position: relative;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+
+}
+.card-01{
+    position: absolute;
+    /*border: 2px solid white;*/
+    background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
+    border: 2px #01EFFF;
+    border-style: solid none solid solid;
+    border-radius: 20px 0 0 20px;
+    width: 270px;
     height: 100%;
+    left: 100px;
+
+    transition: 0.2s;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
+    display: flex;
+    justify-content: space-between;
 }
-.service-content>div:first-child{
-    border: 2px solid red;
-    flex-grow: 1;
+.card-02{
+    position: absolute;
+    /*border: 2px solid white;*/
+    background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
+    border: 2px #01EFFF;
+    border-style: solid solid solid none;
+    border-radius: 0 20px 20px 0;
+    width: 270px;
+    height: 100%;
+    right: 100px;
+
+    transition: 0.2s;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
+    display: flex;
+    justify-content: space-between;
 }
-.service-content>div:last-child{
+.card-01>div:first-child{ /*web developer heading*/
+    /*border: 2px solid red;*/
+    flex-grow: 2;
+}
+.card-01>div:last-child{
+    /*border: 2px solid blue;*/
+    flex-grow: 0;
+}
+
+.card-01-heading {
+    position: relative;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #01EFFF;
+    text-shadow: 3px 3px 5px #6db0bc;
+    text-transform: uppercase;
+    text-orientation: sideways;
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    letter-spacing: 10px;
+
+    transform: translateZ(50px) scale(1);
+}
+
+.web-content>div:first-child{
+    /*border: 1px solid red;*/
     flex-grow: 1;
-    border: 2px solid purple;
+    height: 20%;
+    justify-content: center;
+}
+.web-content>div:first-child>i{
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+
+    transform: translateZ(20px);
+}
+.web-content>div:last-child{
+    /*border: 1px solid blue;*/
+    height: 80%;
+    flex-grow: 2;
+}
+.web-items-info>p{
+    position: relative;
+    top: 30px;
+    color: #FFFFFF;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transform: translateZ(500px);
+}
+
+
+/* -------------- CARD 02 ------------------*/
+
+.card-02>div:first-child{ /*web developer heading*/
+    /*border: 2px solid red;*/
+    flex-grow: 0;
+}
+.card-02>div:last-child{
+    /*border: 2px solid blue;*/
+    flex-grow: 2;
+}
+
+.card-02-heading {
+    position: relative;
+    top: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #01EFFF;
+    text-shadow: 3px 3px 5px #6db0bc;
+    text-transform: uppercase;
+    text-orientation: sideways;
+    writing-mode: vertical-lr;
+    /*white-space: nowrap;*/
+    letter-spacing: 10px;
+
+    transform: translateZ(50px) scale(1);
+}
+
+.android-content>div:first-child{
+    /*border: 1px solid red;*/
+    flex-grow: 1;
+    height: 20%;
+    justify-content: center;
+}
+.android-content>div:first-child>i{
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+
+    transform: translateZ(20px);
+}
+.android-content>div:last-child{
+    /*border: 1px solid blue;*/
+    height: 80%;
+    flex-grow: 2;
+}
+.android-items-info>p{
+    position: relative;
+    top: 30px;
+    color: #FFFFFF;
+    font-size: 15px;
+    letter-spacing: 3px;
+    transform: translateZ(500px);
+}
+
+
+.service-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+
+    transition: all 0.2s ease;
+    animation: service-info 10s ease infinite;
+}
+@keyframes  service-info{
+    from{
+        color: #FFFFFF;
+    }
+    to{
+        color: #01EFFF;
+    }
+}
+.service-info-container>i{
+    position: relative;
+    cursor: pointer;
+    left: 50px;
+
+    transform: rotate(20deg);
+
+    transition: all 0.3s ease;
+    animation: service-info-i 10s ease infinite;
+
+    animation-delay: 4s;
+}
+@keyframes  service-info-i{
+    0%,30%{
+        transform: translateX(-50px) translateY(10px);
+        opacity: 0;
+    }
+    31%,60%{
+        transform: translateX(-10px) translateY(-20px);
+        opacity: 1;
+    }
+    61%,100%{
+        transform: translateX(10px) translateY(-50px);
+        opacity: 0;
+    }
 }
