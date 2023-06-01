@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 *{
     padding: 0;
@@ -57,7 +58,7 @@
     flex-grow: 3;
 }
 .service-content>div:last-child{ /*more Info container*/
-    border: 2px solid aquamarine;
+    /*border: 2px solid aquamarine;*/
     flex-grow: 1;
 }
 .card-container{
@@ -113,18 +114,17 @@
 
 .card-01-heading {
     position: relative;
-    top: 10px;
+    top: 60px;
     font-size: 28px;
     font-weight: bold;
     color: #01EFFF;
     text-shadow: 3px 3px 5px #6db0bc;
     text-transform: uppercase;
     text-orientation: sideways;
-    writing-mode: vertical-lr;
-    white-space: nowrap;
+    writing-mode: vertical-rl;
+    /*white-space: nowrap;*/
     letter-spacing: 10px;
 
-    transform: translateZ(50px) scale(1);
 }
 
 .web-content>div:first-child{
@@ -178,8 +178,6 @@
     writing-mode: vertical-lr;
     /*white-space: nowrap;*/
     letter-spacing: 10px;
-
-    transform: translateZ(50px) scale(1);
 }
 
 .android-content>div:first-child{
@@ -192,7 +190,6 @@
     position: relative;
     top: 40px;
     font-size: 60px;
-
     transform: translateZ(20px);
 }
 .android-content>div:last-child{
@@ -215,6 +212,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    font-family: 'Kalam', cursive;
     font-weight: bold;
     font-size: 40px;
 
@@ -231,7 +229,6 @@
 }
 .service-info-container>i{
     position: relative;
-    cursor: pointer;
     left: 50px;
 
     transform: rotate(20deg);
@@ -245,13 +242,16 @@
     0%,30%{
         transform: translateX(-50px) translateY(10px);
         opacity: 0;
+        cursor: none;
     }
     31%,60%{
         transform: translateX(-10px) translateY(-20px);
         opacity: 1;
+        cursor: pointer;
     }
     61%,100%{
         transform: translateX(10px) translateY(-50px);
         opacity: 0;
+        cursor: none;
     }
 }
