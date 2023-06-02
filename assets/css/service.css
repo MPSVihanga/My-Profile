@@ -286,21 +286,21 @@
 
     transition: all 0.3s ease;
     animation: service-info-i 10s ease infinite;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 @keyframes  service-info-i{
-    0%,30%{
+    0%,20%{
         transform: translate(-35px,10px);
         opacity: 0;
         cursor: none;
     }
-    31%,60%{
+    21%,75%{
         color: #01EFFF;
         transform: translate(-20px,-10px);
         opacity: 1;
         cursor: pointer;
     }
-    61%,100%{
+    76%,100%{
         transform: translate(10px,-50px);
         opacity: 0;
         cursor: none;
