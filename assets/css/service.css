@@ -114,7 +114,7 @@
 
 .card-01-heading {
     position: relative;
-    top: 40px;
+    top: 20px;
     font-size: 28px;
     font-weight: bold;
     color: #01EFFF;
@@ -168,7 +168,7 @@
 
 .card-02-heading {
     position: relative;
-    top: 40px;
+    top: 20px;
     font-size: 28px;
     font-weight: bold;
     color: #01EFFF;
@@ -211,46 +211,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+.service-info-container h3{
     font-family: 'Kalam', cursive;
     font-weight: bold;
     font-size: 40px;
-
-    transition: all 0.2s ease;
-    animation: service-info 10s ease infinite;
 }
-@keyframes  service-info{
-    from{
-        color: #FFFFFF;
+.service-info-container>h3:first-child{
+    animation: service-info-h3-1 10s ease infinite;
+}
+@keyframes  service-info-h3-1{
+    0%	, 15% {
+        transform: translateY(-36px) translateX(-30px);
+        opacity: 0;
     }
-    to{
+    35%, 80% {
+        transform: translateY(0px) translateX(0);
+        opacity: 1;
         color: #01EFFF;
     }
+    92%, 100% {
+        transform: translateY(36px) translateX(30px);
+        opacity: 0;
+
+    }
 }
+
+.service-info-container>h3:nth-child(2){
+    animation: service-info-h3-2 10s ease infinite;
+    animation-delay: 1s;
+}
+@keyframes  service-info-h3-2{
+    0%	, 15% {
+        transform: translateY(-36px) translateX(-30px);
+        animation-delay: 5s;
+        opacity: 0;
+    }
+    35%, 80% {
+        transform: translateY(0px) translateX(0);
+        opacity: 1;
+        color: #01EFFF;
+    }
+    92%, 100% {
+        transform: translateY(36px) translateX(30px);
+        opacity: 0;
+    }
+}
+
+.service-info-container>h3:nth-child(3){
+    animation: service-info-h3-3 10s ease infinite;
+    animation-delay: 2s;
+}
+@keyframes  service-info-h3-3{
+    0%	, 15% {
+        transform: translateY(-36px) translateX(-30px);
+        opacity: 0;
+    }
+    35%, 80% {
+        transform: translateY(0px) translateX(0);
+        opacity: 1;
+        color: #01EFFF;
+    }
+    92%, 100% {
+        transform: translateY(36px) translateX(30px);
+        opacity: 0;
+    }
+}
+
 .service-info-container>i{
     position: relative;
-    left: 50px;
-
+    left: 60px;
+    font-size: 40px;
     transform: rotate(20deg);
 
     transition: all 0.3s ease;
     animation: service-info-i 10s ease infinite;
-
     animation-delay: 4s;
 }
 @keyframes  service-info-i{
     0%,30%{
-        transform: translateX(-50px) translateY(10px);
+        transform: translate(-35px,10px);
         opacity: 0;
         cursor: none;
     }
     31%,60%{
-        transform: translateX(-10px) translateY(-20px);
+        color: #01EFFF;
+        transform: translate(-20px,-10px);
         opacity: 1;
         cursor: pointer;
     }
     61%,100%{
-        transform: translateX(10px) translateY(-50px);
+        transform: translate(10px,-50px);
         opacity: 0;
         cursor: none;
     }
