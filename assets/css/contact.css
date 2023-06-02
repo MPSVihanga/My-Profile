@@ -49,11 +49,11 @@
 }
 .contact-flex-container>div:first-child{
     flex-grow: 3;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 .contact-flex-container>div:last-child{
     flex-grow: 1;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 .contact-container{
     display: flex;
@@ -61,26 +61,26 @@
     flex-direction: column;
 }
 .contact-container>div:first-child{
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
     flex-grow: 1;
 }
 .contact-container>div:nth-child(2){
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
     flex-grow:1;
 }.contact-container>div:nth-child(3){
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
     flex-grow: 1;
 }.contact-container>div:nth-child(4){
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
     flex-grow: 1;
 }.contact-container>div:last-child{
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
     flex-grow: 1;
 }
 .contact-container>div:first-child>h2{
     position: relative;
     top: 10px;
-    right: 270px;
+    right: 180px;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     color: #01EFFF;
@@ -89,7 +89,7 @@
 
 .contact-container>div:nth-child(2)>input{
     position: relative;
-    right: 300px;
+    right: 200px;
     width: 500px;
     height: 60px;
     border-radius: 14px;
@@ -111,7 +111,7 @@
 }
 .contact-container>div:nth-child(3)>input{
     position: relative;
-    right: 300px;
+    right: 200px;
     width: 500px;
     height: 60px;
     border-radius: 14px;
@@ -133,7 +133,7 @@
 }
 .contact-container>div:nth-child(4)>textarea{
     position: relative;
-    right: 250px;
+    right: 150px;
     width: 600px;
     height: 100px;
     border-radius: 14px;
@@ -157,7 +157,7 @@
 }
 .contact-container>div:last-child>input{
     position: relative;
-    right: 90px;
+    right: 30px;
     width: 270px;
     height: 60px;
     font-size: 20px;
@@ -169,4 +169,81 @@
 }
 .contact-container>div:last-child>input:hover{
     background-color: #01EFFF;
+}
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contact-links>div:first-child{
+    /*border: 1px solid yellow;*/
+    flex-grow: 3;
+}
+.contact-links>div:nth-child(2){
+    /*border: 1px solid yellow;*/
+    flex-grow: 1;
+}
+.contact-links>div:nth-child(3){
+    /*border: 1px solid yellow;*/
+    flex-grow: 1;
+}
+.contact-links>div:last-child{
+    /*border: 1px solid yellow;*/
+    flex-grow: 1;
+}
+.contact-links>div:first-child>h2{
+    position: relative;
+    top: 80px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.contact-links-items{
+    position: relative;
+    left: 80px;
+    top: 20px;
+    width: 300px;
+    height: 100px;
+    /*border: 1px solid white;*/
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contact-links-items>a>div:first-child{
+    /*border: 1px solid red;*/
+    flex-grow: 1;
+}
+.contact-links-items>a>div:nth-child(2){
+    /*border: 1px solid red;*/
+    flex-grow: 1;
+}
+.contact-links-items>a>div:last-child{
+    /*border: 1px solid red;*/
+    flex-grow: 1;
+}
+.contact-links-items>a>div:first-child>i{
+    font-size: 30px;
+}
+.contact-links-items>a>div:nth-child(2){
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.contact-links-items>a>div:last-child{
+    color: #c6d8d8;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.contact-links-items>a{
+    text-decoration: none;
+}
+.home{
+    cursor: auto;
 }
