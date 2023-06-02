@@ -278,7 +278,7 @@
     }
 }
 
-.service-info-container>i{
+.service-info-container>a>i{
     position: relative;
     left: 60px;
     font-size: 40px;

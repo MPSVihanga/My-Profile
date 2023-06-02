@@ -11,7 +11,7 @@
     width: 100%;
     height: 650px;
 }
-.bg-container{
+.bg-project-container{
     position: relative;
     border: 2px #01EFFF;
     border-style: solid solid none none;
@@ -20,4 +20,27 @@
     height: 600px;
     left: 40px;
     top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bg-project-container>div:first-child{
+    border: 1px solid white;
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.bg-project-container>div:last-child{
+    border: 1px solid blue;
+    flex-grow: 2;
+}
+.bg-project-container>div:first-child>h1{
+    /*border: 2px solid red;*/
+    font-size: 48px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
 }
