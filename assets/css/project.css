@@ -33,7 +33,7 @@
     justify-content: flex-end;
 }
 .bg-project-container>div:last-child{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     flex-grow: 2;
 }
 .bg-project-container>div:first-child>h1{
@@ -50,11 +50,11 @@
     flex-direction: column;
 }
 .project-flex-container>div:first-child{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     flex-grow: 1;
 }
 .project-flex-container>div:last-child{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     flex-grow: 1;
 }
 
@@ -63,15 +63,15 @@
     justify-content: space-between;
 }
 .project-flex-items-01>div:first-child{
-    border: 1px dotted yellow;
+    /*border: 1px dotted yellow;*/
     flex-grow: 2;
 }
 .project-flex-items-01>div:nth-child(2){
-    border: 1px dotted yellow;
+    /*border: 1px dotted yellow;*/
     flex-grow: 1;
 }
 .project-flex-items-01>div:last-child{
-    border: 1px dotted yellow;
+    /*border: 1px dotted yellow;*/
     flex-grow: 1.5;
 }
 
@@ -80,16 +80,92 @@
     justify-content: space-between;
 }
 .project-flex-items-02>div:first-child{
-    border: 1px dotted yellow;
+    /*border: 1px dotted yellow;*/
     flex-grow: 1.5;
 }
 .project-flex-items-02>div:nth-child(2){
-    border: 1px dotted yellow;
+    /*border: 1px dotted yellow;*/
     flex-grow: 2;
 }
 .project-flex-items-02>div:last-child{
-    border: 1px dotted yellow;
+    /*border: 1px dotted yellow;*/
     flex-grow: 1;
 }
 
+.item-bg-11{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 2px solid white;
+    color: #FFFFFF;
+    top: 15px;
+    left: 15px;
 
+    border-radius: 15px;
+    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
+}
+.item-bg-12{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 2px solid white;
+    color: #FFFFFF;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 15px;
+    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
+}
+.item-bg-13{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 2px solid white;
+    color: #FFFFFF;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 15px;
+    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
+}
+.item-bg-21{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 2px solid white;
+    color: #FFFFFF;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 15px;
+    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
+}
+.item-bg-22{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 2px solid white;
+    color: #FFFFFF;
+    top: 15px;
+    left: 15px;
+
+    border-radius: 15px;
+    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
+}
+.item-bg-23{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    border: 2px solid white;
+    color: #FFFFFF;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 15px;
+    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
+}
+
+.item-bg-11:hover {
+    transition: all 1s ease;
+    border: 2px solid #01EFFF;
+}
