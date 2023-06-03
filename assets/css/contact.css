@@ -158,7 +158,6 @@
 }
 .contact-container>div:last-child>input{
     position: relative;
-    right: 30px;
     width: 270px;
     height: 60px;
     font-size: 20px;
