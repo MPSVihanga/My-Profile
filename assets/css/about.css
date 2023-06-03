@@ -152,7 +152,6 @@
 
 .about-me-tag>h1{
     position: absolute;
-    margin: 0 0 0 0;
     color: white;
     font-size: 48px;
     font-weight: bold;
@@ -161,7 +160,7 @@
 }
 .about-me-content>h2:first-child{
     position: absolute;
-    margin: 10px 0 0 50px;
+    margin: 20px 0 0 50px;
     color: white;
     font-size: 26px;
     font-weight: bold;
@@ -170,7 +169,7 @@
 }
 .about-me-content>h2:nth-child(2){
     position: absolute;
-    margin: 50px 0 0 80px;
+    margin: 60px 0 0 80px;
     color: white;
     font-size: 26px;
     font-weight: bold;
@@ -186,7 +185,7 @@
 }
 .anim-text{
     position: absolute;
-    margin: 90px 0 0 90px;
+    margin: 100px 0 0 90px;
     color: white;
     font-size: 26px;
     font-weight: bold;
