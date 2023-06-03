@@ -89,8 +89,8 @@
 
 .contact-container>div:nth-child(2)>input{
     position: relative;
-    right: 140px;
-    width: 500px;
+    right: 90px;
+    width: 600px;
     height: 60px;
     border-radius: 14px;
     background-color: #e3f4f4;
@@ -111,8 +111,8 @@
 }
 .contact-container>div:nth-child(3)>input{
     position: relative;
-    right: 140px;
-    width: 500px;
+    right: 90px;
+    width: 600px;
     height: 60px;
     border-radius: 14px;
     background-color: #e3f4f4;
