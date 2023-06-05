@@ -282,12 +282,13 @@
     align-items: flex-start;
 }
 
+/* Start Button */
 
 .button-hover{
     position: relative;
     top: 2rem;
-    width: 180px;
-    height: 50px;
+    width: 18rem;
+    height: 5rem;
     font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -358,6 +359,8 @@ span:nth-child(4){
 .button-hover:hover span:nth-child(4){
     bottom: 0;
 }
+
+/* End Button */
 
 .anim-div01{
     transition: all 0.2s ease;
