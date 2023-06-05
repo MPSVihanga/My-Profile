@@ -8,17 +8,17 @@
 .contact-bg{
     background-color: #000000;
     width: 100%;
-    height: 670px;
+    height: 100vh;
 }
 .contact-bg-container{
     position: relative;
-    border: 2px #01EFFF;
+    border: 0.2rem #01EFFF;
     border-style: solid solid none none;
-    border-radius: 0 20px 0 0;
-    width: 96%;
-    height: 600px;
-    left: 40px;
-    top: 65px;
+    border-radius: 0 2rem 0 0;
+    width: 97%;
+    height: 60rem;
+    left: 2rem;
+    top: 6.5rem;
 
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,11 @@
 }
 .contact-bg-container>div:first-child>h1{
     /*border: 2px solid red;*/
-    font-size: 48px;
+    font-size: 4.8rem;
     color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
 }
 .contact-flex-container{
     display: flex;
@@ -79,93 +79,93 @@
 }
 .contact-container>div:first-child>h2{
     position: relative;
-    top: 10px;
-    right: 120px;
+    top: 1rem;
+    left: 4rem;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     color: #01EFFF;
-    letter-spacing: 3px;
+    letter-spacing: 0.3px;
 }
 
 .contact-container>div:nth-child(2)>input{
     position: relative;
-    right: 90px;
-    width: 600px;
-    height: 60px;
-    border-radius: 14px;
+    left: 4rem;
+    width: 60rem;
+    height: 6rem;
+    border-radius: 1.4rem;
     background-color: #e3f4f4;
-    padding-left: 50px;
-    font-size: 20px;
+    padding-left: 5rem;
+    font-size: 2rem;
     outline: #01EFFF;
 }
 .contact-container>div:nth-child(2)>input:focus{
-    border: 3px solid #01EFFF;
+    border: 0.3rem solid #01EFFF;
 }
 .contact-container>div:nth-child(2)>input::placeholder{
     position: relative;
-    left: 5px;
+    left: 0.5rem;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     color: #565a5a;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
 }
 .contact-container>div:nth-child(3)>input{
     position: relative;
-    right: 90px;
-    width: 600px;
-    height: 60px;
-    border-radius: 14px;
+    left: 4rem;
+    width: 60rem;
+    height: 6rem;
+    border-radius: 1.4rem;
     background-color: #e3f4f4;
-    padding-left: 50px;
-    font-size: 20px;
+    padding-left: 5rem;
+    font-size: 2rem;
     outline: none;
 }
 .contact-container>div:nth-child(3)>input:focus{
-    border: 3px solid #01EFFF;
+    border: 0.3rem solid #01EFFF;
 }
 .contact-container>div:nth-child(3)>input::placeholder{
     position: relative;
-    left: 5px;
+    left: 0.5rem;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     color: #565a5a;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
 }
 .contact-container>div:nth-child(4)>textarea{
     position: relative;
-    right: 90px;
-    padding-top: 15px;
-    width: 600px;
-    height: 150px;
-    border-radius: 14px;
+    left: 4rem;
+    padding-top: 1.5rem;
+    width: 60rem;
+    height: 15rem;
+    border-radius: 1.4rem;
     background-color: #e3f4f4;
-    padding-left: 50px;
-    font-size: 20px;
+    padding-left: 5rem;
+    font-size: 2rem;
     resize: none;
     overflow: hidden;
     outline: none;
 }
 .contact-container>div:nth-child(4)>textarea:focus{
-    border: 3px solid #01EFFF;
+    border: 0.3rem solid #01EFFF;
 }
 .contact-container>div:nth-child(4)>textarea::placeholder{
     position: relative;
-    left: 5px;
+    left: 0.5rem;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     color: #565a5a;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
 }
 .contact-container>div:last-child>input{
     position: relative;
-    left: 80px;
-    width: 270px;
-    height: 60px;
-    font-size: 20px;
+    left: 36rem;
+    width: 27rem;
+    height: 6rem;
+    font-size: 2rem;
     font-family: "Poppins", sans-serif;
-    border-radius: 30px;
+    border-radius: 2rem;
     color: #FFFFFF;
-    border: 3px solid #01EFFF;
+    border: 0.2rem solid #01EFFF;
     background-color: black;
 }
 .contact-container>div:last-child>input:hover{
@@ -183,29 +183,42 @@
 .contact-links>div:nth-child(2){
     /*border: 1px solid yellow;*/
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-links>div:nth-child(3){
     /*border: 1px solid yellow;*/
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .contact-links>div:last-child{
     /*border: 1px solid yellow;*/
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .contact-links>div:first-child>h2{
     position: relative;
-    top: 80px;
+    top: 8rem;
+    left: 2rem;
     font-family: "Poppins", sans-serif;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #FFFFFF;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 .contact-links-items{
     position: relative;
-    left: 80px;
-    top: 20px;
-    width: 300px;
-    height: 100px;
+    width: 30rem;
+    height: 10rem;
     /*border: 1px solid white;*/
 
     display: flex;
@@ -213,21 +226,35 @@
     flex-direction: column;
 }
 .contact-links-items>a>div:first-child{
-    /*border: 1px solid red;*/
+    /*border: 1px solid red*/;
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-links-items>a>div:nth-child(2){
     /*border: 1px solid red;*/
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-links-items>a>div:last-child{
     /*border: 1px solid red;*/
     flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-links-items>a>div:first-child>i{
     font-size: 30px;
 }
 .contact-links-items>a>div:nth-child(2){
+    position: relative;
+    top: 1.5rem;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -236,6 +263,8 @@
     text-transform: uppercase;
 }
 .contact-links-items>a>div:last-child{
+    position: relative;
+    top: 1.5rem;
     color: #c6d8d8;
     font-family: "Poppins", sans-serif;
     font-size: 18px;

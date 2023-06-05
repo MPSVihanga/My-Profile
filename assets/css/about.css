@@ -6,31 +6,33 @@
     font-family: "Poppins", sans-serif;
 }
 #about-me{
-    width: 100%;
-    height: 690px;
     position: relative;
-    background: #000000;
-}
-.wrapper{
     width: 100%;
-    margin: 0 auto;
+    height: 100vh;
+    background: #000000;
 }
 .about-me-container{
     position: absolute;
-    border: 2px #01EFFF;
+    border: 0.2rem #01EFFF;
     border-style: solid solid none none;
-    border-radius: 0 20px 0 0;
-    width: 95%;
-    height: 600px;
-    margin: 65px 0 0 60px;
+    border-radius: 0 2rem 0 0;
+    width: 97%;
+    height: 60rem;
+    top: 6.5rem;
+    left: 2rem;
+
     display: flex;
     justify-content: space-between;
 }
 .profile-img-container{
+    position: relative;
+    width: 40%;
+    /*border: 2px solid red;*/
     flex-grow: 1.3;
 }
 .my-content{
     width: 60%;
+    flex-grow: 5;
     /*border: 2px solid blue;*/
     display: flex;
     justify-content: space-between;
@@ -43,63 +45,70 @@
     justify-content: flex-end;
 }
 .about-me-content{
-    flex-grow: 1;
+    position: relative;
+    flex-grow: 2;
     /*border: 2px solid firebrick;*/
 }
 
 .profile-img-shadow{
     position: absolute;
     background: #01EFFF;
-    margin: 20px 0 0 -30px;
-    width: 380px;
-    height: 450px;
+    top: 2rem;
+
+    width: 38rem;
+    height: 45rem;
     clip-path: polygon(0 0,70% 0,50% 100%,0 100%);
-    border-radius: 20px 0 0 20px/20px 0 0 20px;
+    border-radius: 2rem 0 0 2rem/2rem 0 0 2rem;
 }
 .profile-img{
     position: absolute;
+    top: 3.5rem;
+    left: 1.5rem;
+
     background: radial-gradient(ellipse at bottom, #1a202d 0%, #121a26 100%);;
-    margin: 35px 0 0 -15px;
-    width: 330px;
-    height: 460px;
+    width: 30rem;
+    height: 42rem;
     border-radius: 20px 20px 0 20px/20px 20px 0 20px;
 }
 .vihanga-img{
     position: absolute;
-    width: 330px;
-    height: 330px;
-    margin: 70px 0 0 -150px;
+    top: 7rem;
+    left: 1rem;
+    width: 28rem;
+    height: 30rem;
+
     mask-image:url("../Vihanga/mask-image.png");
     -webkit-mask-image:url("../Vihanga/mask-image.png");
     mask-position: bottom;
     -webkit-mask-position: bottom;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    mask-size:450px ;
-    -webkit-mask-size: 450px;
+    mask-size:45rem ;
+    -webkit-mask-size: 45rem;
 }
 .quality-container{
     position: absolute;
-    margin: 20px 0 0 280px;
-    width: 250px;
-    height: 550px;
+    top: 1rem;
+    left: 27rem;
+    width: 25rem;
+    height: 55rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    /*border: 2px solid red;*/
+    /*border: 0.2rem solid red;*/
 }
 .quality-container>div{
-    border: #01EFFF 1px;
+    border: #01EFFF 0.1rem;
     border-style: none none none solid;
-    width: 245px;
-    height: 60px;
+    width: 24.5rem;
+    height: 5rem;
 }
 .quality-plus-container {
     position: absolute;
     background: #01EFFF;
     width: 25px;
     height: 25px;
-    margin: 18px 0 0 -13px;
+    margin: 1.2rem 0 0 -1.3rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -110,13 +119,13 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 220px;
-    height: 75px;
-    margin: -10px 0 0 20px;
-    padding-top: 15px;
+    width: 22rem;
+    height: 7.5rem;
+    margin: -2rem 0 0 2rem;
+    padding-top: 1.5rem;
     color: white;
-    letter-spacing: 5px;
-    font-size: 20px;
+    letter-spacing: 0.4rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
@@ -124,60 +133,51 @@
 .links-container{
     position: absolute;
     /*border: 2px solid red;*/
-    width: 280px;
-    height: 50px;
+    width: 26rem;
+    height: 5rem;
     bottom: 0;
-    margin: 0 0 30px -20px;
+    margin: 0 0 5rem 0;
     display: flex;
     justify-content: space-evenly;
 }
 .links-container>div>a {
-    width: 35px;
-    height: 35px;
-    margin: 20px 0 0 0;
-}
-.links-container>div>a>img{
-    width: 30px;
-    height: 30px;
-    background: #01EFFF;
-    object-fit: contain;
-}
-.links-container>div:nth-child(3)>a>img{
-    object-fit: cover;
-    margin-top: 5px;
-    width: 30px;
-    height: 24.4px;
-
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem 0 0 0;
+    font-size: 1.2rem;
 }
 
-.about-me-tag>h1{
+
+.about-me-tag>h1{ /*about me*/
     position: absolute;
     color: white;
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
 }
-.about-me-content>h2:first-child{
+.about-me-content>h2:first-child{ /*Hello--------*/
     position: absolute;
-    margin: 20px 0 0 50px;
+    top: 8rem;
+    left: 9rem;
     color: white;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
 }
-.about-me-content>h2:nth-child(2){
+.about-me-content>h2:nth-child(2){  /*I am*/
     position: absolute;
-    margin: 60px 0 0 80px;
+    top: 13rem;
+    left: 11rem;
     color: white;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
 }
-.about-me-content>h2:nth-child(2)>b{
-    font-size: 30px;
+.about-me-content>h2:nth-child(2)>b{   /*MPS Vihanga*/
+    font-size: 3rem;
     font-family: 'Courgette', cursive;
     background: -webkit-linear-gradient(#01EFFF, #06b5c4, #38495a);
     -webkit-background-clip: text;
@@ -185,7 +185,8 @@
 }
 .anim-text{
     position: absolute;
-    margin: 100px 0 0 90px;
+    top: 18rem;
+    left: 11rem;
     color: white;
     font-size: 26px;
     font-weight: bold;
@@ -242,7 +243,7 @@
 
 
 .skill-anim-container{
-    flex-grow: 2;
+    flex-grow: 1.5;
     /*border: 2px solid magenta;*/
     display: flex;
     justify-content: space-between;
@@ -258,7 +259,6 @@
     flex-grow: 1;
     /*border: 2px solid red;*/
     display: flex;
-    margin-top: 20px;
     justify-content: space-evenly;
 }
 .anim-skills>div:first-child>div{
@@ -274,29 +274,25 @@
     background-color: #01EFFF;
 }
 
-
-.skill-anim-container>div:last-child{
-    flex-grow: 1;
-    /*border: 2px solid blue;*/
-}
-
 .skill-content-btn{
+    flex-grow: 0.5;
+    /*border: 2px solid blue;*/
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
     align-items: flex-start;
-
 }
 
 
 .button-hover{
+    position: relative;
+    top: 2rem;
     width: 180px;
     height: 50px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     text-transform: uppercase;
     overflow: hidden;
     cursor: pointer;
-    position: relative;
     background-color: transparent;
     color: #01EFFF;
     border:1.5px solid #01EFFF;
