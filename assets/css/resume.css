@@ -46,29 +46,71 @@ html::-webkit-scrollbar-thumb{
 }
 .resume-container>div:last-child{
     /*border: 2px solid red;*/
-    flex-grow: 5;
+    flex-grow: 3;
+}
+.resume-heading-section{
+    display: flex;
+    justify-content: space-between;
+}
+.resume-heading-section>h1{
+    /*border: 1px solid red;*/
+    flex-grow: 1;
+}
+.resume-heading-section>div{
+    /*border: 1px solid blue;*/
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .resume-heading{
     padding-left: 1.5rem;
     color: white;
-    font-size: 3.6rem;
+    font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.9rem;
 }
+.topic-cv{
+    position: relative;
+    right: 10.2rem;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+.resume-cv>i{
+    position: relative;
+    right: 10rem;
+    bottom: 0.7rem;
+    font-size: 2.5rem;
+}
+.heading-home{
+    position: relative;
+    background: radial-gradient(ellipse at bottom, #022727 0%, #052323 100%);
+    width: 5.2rem;
+    height: 5.2rem;
+    right: 2rem;
+    border-radius: 4rem;
+    box-shadow: 3px 3px 5px #01EFFF inset;
+}
+.heading-home>i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2.5rem;
+    font-size: 3rem;
+}
 
 .resume-content{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
-
+    /*height: 70vh;*/
 }
 .resume-content>div:first-child{
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     flex-grow: 1;
-
-
 }
 .resume-content>div:last-child{
     /*border: 2px solid blue;*/
@@ -149,8 +191,10 @@ html::-webkit-scrollbar-thumb{
     letter-spacing: 0.3rem;
     font-size: 2rem;
 }
-
+/*---------------------------------*/
 .edu-exp-content{
+    height: 75vh;
+    /*border: 1px solid greenyellow;*/
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -160,10 +204,6 @@ html::-webkit-scrollbar-thumb{
     flex-grow: 1;
 }
 .edu-exp-content>div:nth-child(2){
-    /*border: 2px solid yellow;*/
-    flex-grow: 1;
-}
-.edu-exp-content>div:nth-child(3){
     /*border: 2px solid yellow;*/
     flex-grow: 1;
 }
@@ -236,19 +276,6 @@ html::-webkit-scrollbar-thumb{
     font-size: 1.8rem;
 }
 
-/*-------------------------- CV ------------------------*/
 
 
-.cv-bg{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-.cv{
-    position: relative;
-    /*border: 2px solid red;*/
-    top: 5rem;
-    left: 5rem;
-    width: 59rem;
-    height: 89rem;
-}
+/*---------------------------------------------------------*/
