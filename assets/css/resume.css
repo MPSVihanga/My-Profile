@@ -7,6 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 html {
+    overflow-x: hidden;
     font-size: 62.5%; /* 16px * 0.625 = 10px */
 }
 body{
@@ -57,12 +58,17 @@ html::-webkit-scrollbar-thumb{
 }
 
 .resume-content{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
+
 }
 .resume-content>div:first-child{
-    /*border: 2px solid blue*/;
+    border: 2px solid blue;
     flex-grow: 1;
+
+
 }
 .resume-content>div:last-child{
     /*border: 2px solid blue;*/
@@ -127,6 +133,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 1rem;
     width: 4rem;
     height: 4rem;
+    left: 0.8rem;
 
     display: flex;
     justify-content: center;

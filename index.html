@@ -10,13 +10,20 @@
             the browser download all the css,js files to run
     -->
 
-    <meta name="keywords" content="MPS Vihanga,MP Sandunika Vihanga,Vihanga,Personal Website,Portfolio,Web Developer,Android Developer ">
-    <meta name="description" content="Hey, Welcome to My Personal Website. My name is MPS Vihanga. I'm a Web Developer, Android Developer from Sri Lanka. It's nice to meet you.">
+    <meta name="keywords" content="MPS Vihanga,MP Sandunika Vihanga,Vihanga,S Vihanga,Personal Website,Portfolio,Web Developer,Android Developer ">
+    <meta name="description" content="Hey, Welcome to My Personal Website. My name is MPS Vihanga. I'm a Web Developer, Android Developer from Sri Lanka... Nice to meet you.">
 
     <meta name="viewport" content="width=device-width initial-scale=1">
 
-    <meta name="theme-color" content="#00fdff">
+    <meta name="theme-color" content="#01EFFF">
 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--pages-->
     <link rel='stylesheet' href='assets/css/space.css' type='text/css'>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="assets/css/about.css" type="text/css">
@@ -24,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/project.css" type="text/css">
     <link rel="stylesheet" href="assets/css/contact.css" type="text/css">
     <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 
 </head>
 <body>
@@ -83,41 +90,41 @@
 
 
     <section id="about-me"> <!--About Me-->
-        <div class="about-me-container"> <!--About me Container-->
+        <div class="about-me-container" data-aos="fade-down-left" > <!--About me Container-->
             <div class="profile-img-container"> <!--profile img container-->
 
-                        <div class="profile-img-shadow"> <!--profile img shadow--></div>
-                        <div class="profile-img">
-                            <img class="vihanga-img" src="assets/Vihanga/vihanga.png">
+                        <div data-aos="fade-right" class="profile-img-shadow"> <!--profile img shadow--></div>
+                        <div data-aos="fade-right" class="profile-img">
+                            <img  class="vihanga-img" src="assets/Vihanga/vihanga.png">
                         </div>
                         <div class="quality-container"> <!--profile quality container-->
-                            <div>
+                            <div data-aos="flip-up">
                                 <div class="quality-plus-container"></div>
                                 <div class="quality-content">Creativity</div>
                             </div>
-                            <div>
+                            <div data-aos="flip-up">
                                 <div class="quality-plus-container"></div>
                                 <div class="quality-content">Team Player</div>
                             </div>
-                            <div>
+                            <div data-aos="flip-up">
                                 <div class="quality-plus-container"></div>
                                 <div class="quality-content">Adaptability</div>
                             </div>
-                            <div>
+                            <div data-aos="flip-up">
                                 <div class="quality-plus-container"></div>
                                 <div class="quality-content">Time<br>Management</div>
                             </div>
-                            <div>
+                            <div data-aos="flip-up">
                                 <div class="quality-plus-container"></div>
                                 <div class="quality-content">COMMUNICABLE</div>
                             </div>
-                            <div>
+                            <div data-aos="flip-up">
                                 <div class="quality-plus-container"></div>
                                 <div class="quality-content">detail oriented</div>
                             </div>
                         </div>
 
-                        <div class="links-container">
+                        <div class="links-container" data-aos="zoom-in-up">
                             <div>
                                 <a href="https://github.com/VihangaMPS"><i class="fa-brands fa-github fa-beat-fade fa-2xl" style="color: #00fdff;"></i></a>
                             </div>
@@ -136,15 +143,15 @@
 
             <div class="my-content"> <!--My content-->
                         <div class="about-me-tag"> <!--About me tag-->
-                            <h1>about me</h1>
+                            <h1 data-aos="fade-down-left">about me</h1>
                         </div>
-                        <div class="about-me-content"> <!--About me content-->
-                            <h2>Hello -----------</h2>
-                            <h2>I am <b>MPS Vihanga</b></h2>
-                            <h2 class="anim-text"> a <b></b></h2>
+                        <div class="about-me-content" > <!--About me content-->
+                            <h2 data-aos="fade-left">Hello -----------</h2>
+                            <h2 data-aos="fade-left">I am <b>MPS Vihanga</b></h2>
+                            <h2 class="anim-text" data-aos="fade-left"> a <b></b></h2>
                         </div>
                         <div class="skill-anim-container"> <!--My skills anim container-->
-                            <div class="anim-skills">
+                            <div class="anim-skills" data-aos="zoom-in">
                                 <div>
                                     <div class="anim-div01"></div>
                                     <div class="anim-div02"></div>
@@ -153,13 +160,13 @@
                                 </div>
                             </div>
                             <div class="skill-content-btn">
-                                <button class="button-hover" onclick="window.location.href='mailto:vihangamps@gmail.com?subject=I&nbsp;like&nbsp;to&nbsp;Work&nbsp;with&nbsp;you&body=Hello&nbsp;MPS&nbsp;Vihanga,'">HIRE ME
+                                <button data-aos="zoom-in-up" class="button-hover" onclick="window.location.href='mailto:vihangamps@gmail.com?subject=I&nbsp;like&nbsp;to&nbsp;Work&nbsp;with&nbsp;you&body=Hello&nbsp;MPS&nbsp;Vihanga,'">HIRE ME
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </button>
-                                <button class="button-hover" onclick="window.location.href='resume.html'">RESUME
+                                <button data-aos="zoom-in-up" class="button-hover" onclick="window.location.href='resume.html'">RESUME
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -174,9 +181,9 @@
 
 
     <section id="service">
-        <div class="service-bg">
-            <div class="bg-service-container">
-                <div> <!--Service Tag-->
+        <div class="service-bg" data-aos="zoom-in">
+            <div class="bg-service-container" data-aos="fade-down-left">
+                <div data-aos="fade-down-left"> <!--Service Tag-->
                     <h1>service</h1>
                 </div>
                 <div class="service-content"> <!--Service Content-->
@@ -184,7 +191,7 @@
 
 
 
-                            <div class="card-01" data-tilt data-tilt-scale="1" data-tilt-glare data-tilt-max-glare="0.3"> <!--3D Cards-->
+                            <div data-aos="zoom-in-right" class="card-01" data-tilt data-tilt-scale="1" data-tilt-glare data-tilt-max-glare="0.3"> <!--3D Cards-->
 
                                 <div class="card-01-img"> <!--web img-->
                                     <i class="fa-solid fa-globe fa-2xl" style="color: #00fdff;"></i>
@@ -201,7 +208,7 @@
                                 </div>
 
                             </div>
-                            <div class="card-02" data-tilt data-tilt-scale="1" data-tilt-glare data-tilt-max-glare="0.3"> <!--3D Cards-->
+                            <div data-aos="zoom-in-left" class="card-02" data-tilt data-tilt-scale="1" data-tilt-glare data-tilt-max-glare="0.3"> <!--3D Cards-->
 
                                 <div class="card-02-img"> <!--web img-->
                                     <i class="fa-brands fa-android fa-2xl" style="color: #00fdff;"></i>
@@ -219,7 +226,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service-info-container"> <!--more Info Container-->
+                        <div class="service-info-container" data-aos="zoom-out-up"> <!--more Info Container-->
                             <h3>Need</h3>&nbsp;&nbsp;&nbsp;<h3>Something</h3>&nbsp;&nbsp;&nbsp;<h3>Different ?</h3> <a href="mailto:vihangamps@gmail.com?subject=I&nbsp;need&nbsp;something&nbsp;unique&body=Hello&nbsp;MPS&nbsp;Vihanga,"><i class="fa-solid fa-paper-plane fa-2xl" style="color: black;"></i></a>
                         </div>
                 </div>
@@ -230,9 +237,9 @@
 
     <section id="projects">
         <div class="project-bg">
-            <div class="bg-project-container">
+            <div class="bg-project-container" data-aos="fade-down-left">
                 <div>
-                    <h1>Projects</h1>
+                    <h1 data-aos="fade-down-left">Projects</h1>
                 </div>
                 <div class="project-flex-container">
                     <div class="project-flex-items-01">
@@ -328,7 +335,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="item-bg2-more-btn">
+                        <div class="item-bg2-more-btn" data-aos="zoom-out-up">
                             <a href="#" class="project-btn-text">More Projects&nbsp;&nbsp;<i class="fa-solid fa-circle-chevron-right fa-lg" style="color: #00fdff;"></i></a>
                         </div>
                     </div>
@@ -340,29 +347,29 @@
 
     <section id="contact">
         <div class="contact-bg">
-            <div class="contact-bg-container">
+            <div class="contact-bg-container" data-aos="fade-down-left">
                 <div>
-                    <h1>Contact</h1>
+                    <h1 data-aos="fade-down-left">Contact</h1>
                 </div>
                 <div class="contact-flex-container">
                     <div class="contact-container">
-                        <div>
+                        <div data-aos="fade-right">
                             <h2>Let's Work together.</h2>
                         </div>
-                        <div>
+                        <div data-aos="fade-right">
                             <input type="text" placeholder="Full Name">
                         </div>
-                        <div>
+                        <div data-aos="fade-right">
                             <input type="text" placeholder="Email">
                         </div>
-                        <div>
+                        <div data-aos="fade-right">
                             <textarea
                                     name="massage"
                                     cols="30"
                                     rows="8"
                                     placeholder="Type Your Massage"></textarea>
                         </div>
-                        <div>
+                        <div data-aos="fade-right">
                             <button class="contact-button" onclick="window.location.href='mailto:vihangamps@gmail.com?subject=Lets&nbsp;Work&nbsp;Together&body=Hello&nbsp;MPS&nbsp;Vihanga,'"><i class="fa-solid fa-paper-plane fa-2xl" style="color: #FFFFFF;"></i>
                                 <span></span>
                                 <span></span>
@@ -372,11 +379,11 @@
                         </div>
                     </div>
                     <div class="contact-links">
-                        <div>
+                        <div data-aos="zoom-out-left">
                             <h2>Have You any Questions ? </h2>
                         </div>
                         <div>
-                            <div class="contact-links-items">
+                            <div class="contact-links-items" data-aos="flip-up">
                                 <a href="https://api.whatsapp.com/send?phone=768351287">
                                     <div>
                                         <i class="fa-brands fa-whatsapp fa-sm" style="color: #00fdff;"></i>
@@ -389,7 +396,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="contact-links-items">
+                            <div class="contact-links-items" data-aos="flip-up">
                                 <a href="mailto:vihangamps@gmail.com?subject=Request%20More%20Details&body=Hello%20please%20give%20more%20project%20Details">
                                     <div>
                                         <i class="fa-solid fa-envelope fa-sm" style="color: #00fdff;"></i>
@@ -404,7 +411,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="contact-links-items">
+                            <div class="contact-links-items" data-aos="flip-up">
                                 <a href="" class="home">
                                     <div>
                                         <i class="fa-solid fa-location-dot fa-sm" style="color: #00fdff;"></i>
@@ -429,6 +436,15 @@
     </footer>
 </main>
 
+
+
+<!--Vanila JS-->
 <script src="assets/js/vanilla-tilt.min.js"></script>
+
+<!--AOS jS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
