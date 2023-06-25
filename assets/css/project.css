@@ -50,153 +50,168 @@
 }
 .project-flex-container>div:first-child{  /*projects line 01*/
     /*border: 1px solid red;*/
-    flex-grow: 2;
-}
-.project-flex-container>div:nth-child(2){ /*projects line 02*/
-    /*border: 1px solid red;*/
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .project-flex-container>div:last-child{ /*more projects*/
     /*border: 1px solid yellow;*/
-    flex-grow: 0.4;
+    flex-grow: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-flex-items-01{
+.project-flex-items{
     display: flex;
     justify-content: space-between;
 }
-.project-flex-items-01>div:first-child{ /*project 1st line divs 1-4*/
+.project-flex-items>div:first-child{ /*project 1st line divs 1-4*/
     /*border: 1px dotted yellow;*/
     flex-grow: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project-flex-items-01>div:nth-child(2){
+.project-flex-items>div:nth-child(2){
     /*border: 1px dotted yellow;*/
     flex-grow: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project-flex-items-01>div:nth-child(3){
+.project-flex-items>div:nth-child(3){
     /*border: 1px dotted yellow;*/
     flex-grow: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project-flex-items-01>div:last-child{
+.project-flex-items>div:last-child{
     /*border: 1px dotted yellow;*/
     flex-grow: 1;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-flex-items-02{
-    display: flex;
-    justify-content: space-between;
-}
-.project-flex-items-02>div:first-child{
-    /*border: 1px dotted yellow;*/
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-flex-items-02>div:nth-child(2){
-    /*border: 1px dotted yellow;*/
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-flex-items-02>div:nth-child(3){
-    /*border: 1px dotted yellow;*/
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-flex-items-02>div:last-child{
-    /*border: 1px dotted yellow;*/
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.item-bg-1{
-    position: relative;
-    width: 23rem;
-    height: 20rem;
-    /*border: 2px solid white;*/
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    border-radius: 0 0 1.5rem 1.5rem;
-    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
-}
+.project-content-bg{
+    background: radial-gradient(ellipse at bottom, #022727 0%, #052323 100%);
+    width: 27rem;
+    height: 40rem;
+    border-radius: 1.5rem;
 
-.item-bg-2{
-    position: relative;
-    width: 23rem;
-    height: 20rem;
-    /*border: 2px solid white;*/
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    border-radius: 0 0 1.5rem 1.5rem;
-    background: radial-gradient(ellipse at bottom, #2a2929 0%, #232424 100%);
-}
-
-
-.item-bg-1:hover {
-    transition: all 0.3s ease;
-    border: 0.2rem solid #01EFFF;
-}.item-bg-2:hover {
-    transition: all 0.3s ease;
-    border: 0.2rem solid #01EFFF;
-}
-
-.item-bg2-more-btn{
-    position: relative;
-    left: 9rem;
-    width: 30rem;
-    height: 6rem;
-    /*border: 2px solid white;*/
-    color: #FFFFFF;
-}
-
-.items-flex{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.items-flex>div:first-child{
+.project-content-bg>div:first-child{
+    flex-grow: 1;
     /*border: 1px solid red;*/
-    flex-grow: 4;
+}
+.project-content-bg>div:last-child{
+    flex-grow: 2;
+    border: 1px solid hotpink;
+}
+
+.project-img{
     position: relative;
+    right: 1.5rem;
+    bottom: 2rem;
+    background-color: #565a5a;
+    width: 26rem;
+    height: 20rem;
+    border-radius: 1.5rem;
+    /*box-shadow: 5px 5px 8px #FFFFFF inset;*/
+    filter: drop-shadow(5px 5px 8px #01EFFF);
+
+
 }
-.items-flex>div:last-child{
-    /*border: 1px solid red;*/
-    flex-grow: 0.5;
-}
-.project-div-img{
+.profile-img-fit{
+    border-radius: 1.5rem;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.items-flex>div:last-child>h2{
-    text-align: center;
+.profile-img-fit:hover{
+    transition: 0.4s all ease;
+    transform: scale(1.05);
 }
-.items-flex>div:last-child>h3{
-    text-align: center;
-    color: darkgrey;
+
+.project-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.project-content>div:first-child{
+    flex-grow: 8;
+    border: 1px solid blue;
+}
+.project-content>div:last-child{
+    flex-grow: 1;
+    border: 1px solid tomato;
+}
+
+.project-topic{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.project-topic>div:first-child{
+    border: 1px solid yellow;
+    flex-grow: 2.4;
+}
+.project-topic>div:last-child{
+    border: 1px solid yellow;
+    flex-grow: 3;
+}
+
+
+
+.project-lang{
+    display: flex;
+    justify-content: space-around;
+}
+.project-lang>div:first-child{
+    border: 1px solid greenyellow;
+}
+.project-lang>div:nth-child(2){
+    border: 1px solid greenyellow;
+}
+.project-lang>div:nth-child(3){
+    border: 1px solid greenyellow;
+}
+.project-lang>div:last-child{
+    border: 1px solid greenyellow;
+}
+.project-lang>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-lang>div>h4{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+/* ---- btn More Projects ------ */
+.project-more-btn{
+    position: relative;
+    left: 9rem;
+    width: 30rem;
+    height: 6rem;
+    /*border: 2px solid white;*/
+    color: #FFFFFF;
 }
 .project-btn-text{
     position: relative;
