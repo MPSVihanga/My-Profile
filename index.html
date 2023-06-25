@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!--pages-->
+    <link rel='stylesheet' href='assets/css/nav.css' type='text/css'>
     <link rel='stylesheet' href='assets/css/space.css' type='text/css'>
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="assets/css/about.css" type="text/css">
@@ -37,22 +38,26 @@
 <body>
 <main>
     <header> <!--Nav Bar-->
-        <div class="wrapper-main">
-            <div class="logo">
-                <a href="#">SV</a>
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <a href="#" class="sv-logo">SV</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div>
-                <nav >
-                    <ul>
-                        <a href="#">HOME</a>
-                        <a href="#about-me">ABOUT</a>
-                        <a href="#service">SERVICES</a>
-                        <a href="#projects">PORTFOLIO</a>
-                        <a href="#contact">CONTACT</a>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <section class="main-page"> <!--Main Page-->
@@ -423,7 +428,8 @@
 </main>
 
 
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="assets/js/nav-bar.js"></script>
 <!--Vanila JS-->
 <script src="assets/js/vanilla-tilt.min.js"></script>
 

@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 html{
     overflow-x: hidden;
@@ -20,57 +21,6 @@ html::-webkit-scrollbar-thumb{
     border-radius: 1rem;
 }
 
-
-/*  ----- Nav Bar Start -------  */
-
-.wrapper-main{
-    width: 100%;
-}
-header{
-    position: fixed;
-    width: 100%;
-    height: 6rem;
-    /*border: 2px solid white;*/
-    background: radial-gradient(ellipse at bottom, #0c1116 0%, #090a0f 100%);
-    z-index: 12;
-    opacity: 80%;
-}
-.logo{
-    width: 30%;
-    float: left;
-    line-height: 6rem;
-    text-align: center;
-}
-.logo a{
-    text-decoration: none;
-    font-size: 4.5rem;
-    font-family: 'Kaushan Script', cursive;
-    background: -webkit-linear-gradient(white, #dbdde0, #dbdde0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 0.5rem;
-}
-nav{
-    /*border: 2px solid red;*/
-    float: right;
-    line-height: 6rem;
-}
-nav a{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.3rem;
-    font-size: 1.6rem;
-    margin: 0 3rem 0 0;
-    color: white;
-
-}
-nav a:hover{
-    transition: all 0.2s ease;
-    color: #01EFFF;
-    border-bottom: 2px solid #01EFFF;
-}
-
-/*  ----- Nav Bar End -------  */
 
 /*  ----- Main Page Start -------  */
 .main-page{
@@ -265,10 +215,7 @@ nav a:hover{
         transform: translateX(-130rem) translateY(-25rem);
         opacity: 0;
     }
-
-
 }
-
 .earthNhorizon{
     width: 100%;
     height: 20rem;
@@ -276,6 +223,8 @@ nav a:hover{
     flex-grow: 1;
     /*border: 2px solid purple;*/
 }
+
+
 
 
 
