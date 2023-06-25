@@ -206,11 +206,6 @@
     color: #c7c4c4;
 }
 
-
-
-
-
-
 /* ---- btn More Projects ------ */
 .project-more-btn{
     position: relative;
@@ -228,4 +223,26 @@
     color: #01EFFF;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+}
+
+
+
+@media all and (min-width: 426px) and (max-width: 768px){
+    .project-flex-items>div:nth-child(3){
+        display: none;
+    }
+    .project-flex-items>div:last-child{
+        display: none;
+    }
+}
+@media all and (max-width: 425px){
+    .project-flex-items>div:nth-child(2){
+        display: none;
+    }
+    .project-flex-items>div:nth-child(3){
+        display: none;
+    }
+    .project-flex-items>div:last-child{
+        display: none;
+    }
 }

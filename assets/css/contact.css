@@ -48,11 +48,11 @@
 }
 .contact-flex-container>div:first-child{
     flex-grow: 3;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
 }
 .contact-flex-container>div:last-child{
     flex-grow: 1;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
 }
 .contact-container{
     display: flex;
@@ -185,7 +185,7 @@
     flex-direction: column;
 }
 .contact-links>div:first-child{
-/*    border: 1px solid yellow;*/
+    border: 1px solid yellow;
     flex-grow: 3;
 
     display: flex;
@@ -288,4 +288,58 @@
 }
 .home{
     cursor: auto;
+}
+
+
+@media all and (min-width: 426px) and (max-width: 768px){
+    .contact-bg{
+        height: 95rem;
+    }
+    .contact-container{
+        position: relative;
+        top: 30rem;
+        left: -2rem;
+        width: 71rem;
+    }
+    .contact-container>div:first-child{
+        position: relative;
+        width: 71rem;
+    }
+    .contact-button{
+        position: relative;
+        left: 4rem;
+    }
+
+
+    .contact-links{
+        position: relative;
+        right: 71rem;
+        width: 71rem;
+    }
+    .contact-links>div:first-child{
+        position: relative;
+        width: 71rem;
+    }
+    .contact-links>div:nth-child(2){
+        position: relative;
+        right: 26rem;
+    }
+    .contact-links>div:nth-child(3){
+        position: relative;
+        bottom: 13rem;
+        left: 1rem;
+    }
+    .contact-links>div:last-child{
+        position: relative;
+        bottom: 26rem;
+        left: 26rem;
+    }
+}
+@media all and (max-width: 425px){
+.contact-flex-container>div:first-child{
+    display: none;
+}
+.contact-flex-container>div:last-child{
+    display: none;
+}
 }

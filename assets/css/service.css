@@ -64,8 +64,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-
 }
+
 .card-01{
     position: absolute;
     top: 4rem;
@@ -332,5 +332,28 @@
         transform: translate(10px,-50px);
         opacity: 0;
         cursor: none;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 768px) {
+
+    .service-bg{
+        background-size: 55% 70%;
+        background-repeat: no-repeat;
+        background-position:center top;
+    }
+    .card-container>div:first-child{
+        width: 23rem;
+        margin-left: -9.5rem;
+    }
+    .card-container>div:last-child{
+        width: 23rem;
+        margin-right: -9.5rem;
+    }
+}
+
+@media all and (max-width: 425px){
+    .service-bg{
+        display: none;
     }
 }

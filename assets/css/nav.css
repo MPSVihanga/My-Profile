@@ -36,6 +36,12 @@ html::-webkit-scrollbar-thumb{
 }
 .sv-logo{
     font-size: 6rem !important;
+    position: relative;
+    bottom: 2.5rem;
+}
+.icon{
+    position: relative;
+    bottom: 2.5rem;
 }
 .navbar .content{
     display: flex;
@@ -48,8 +54,6 @@ html::-webkit-scrollbar-thumb{
     font-weight: 600;
     text-decoration: none;
 
-    position: relative;
-    bottom: 2.5rem;
 }
 .navbar .menu-list{
     display: inline-flex;
@@ -58,16 +62,16 @@ html::-webkit-scrollbar-thumb{
     list-style: none;
 }
 .menu-list li a{
-    position: relative;
-    bottom: 2.5rem;
     color: #fff;
     font-size: 19px;
-    font-weight: 500;
     margin-left: 25px;
     text-decoration: none;
     transition: all 0.3s ease;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
+
+    position: relative;
+    bottom: 2.5rem;
 }
 .menu-list li a:hover{
     color: #01EFFF;
@@ -83,9 +87,9 @@ html::-webkit-scrollbar-thumb{
     display: none;
 }
 .menu-list .cancel-btn{
-    position: absolute;
-    right: 30px;
-    top: 20px;
+    position: relative;
+    right: 8px;
+    top: 5px;
 }
 @media (max-width: 1440px) {
     .content{
