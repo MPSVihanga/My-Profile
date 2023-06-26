@@ -233,7 +233,7 @@
     }
     .project-flex-items>div:nth-child(2){
         position: relative;
-        left: 10rem;
+        left: 15rem;
     }
     .project-flex-items>div:nth-child(3){
         /*border: 1px solid red;*/
@@ -245,7 +245,7 @@
         /*border: 1px solid blue;*/
         position: relative;
         top: 40rem;
-        right: 43rem;
+        right: 39rem;
     }
     .project-more-btn{
         position: relative;

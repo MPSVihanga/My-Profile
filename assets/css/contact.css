@@ -185,7 +185,7 @@
     flex-direction: column;
 }
 .contact-links>div:first-child{
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
     flex-grow: 3;
 
     display: flex;
@@ -337,9 +337,110 @@
 }
 
 @media all and (max-width: 425px){
-#contact{
-    display: none;
-}
+
+    .contact-bg{
+        height: 115rem;
+    }
+    .contact-bg-container{
+        width: 39rem;
+        height: 108rem;
+    }
+    .contact-flex-container>div:first-child{
+        position: relative;
+        height: 60rem;
+    }
+    .contact-container>div:first-child>h2{
+        position: relative;
+        top: 4rem;
+        left: 1rem;
+        font-size: 33px;
+        letter-spacing: 0.3px;
+    }
+    .contact-container>div:nth-child(2)>input{
+        position: relative;
+        left: 1rem;
+        bottom: 1rem;
+        width: 36rem;
+        height: 5.2rem;
+        padding-left: 2.5rem;
+        font-size: 1.8rem;
+    }
+    .contact-container>div:nth-child(3)>input{
+        position: relative;
+        left: 1rem;
+        bottom: 4rem;
+        width: 36rem;
+        height: 5.2rem;
+        padding-left: 2.5rem;
+        font-size: 1.8rem;
+    }
+    .contact-container>div:nth-child(4)>textarea{
+        position: relative;
+        left: 1rem;
+        bottom: 6rem;
+        width: 36rem;
+        height: 13rem;
+        padding-top: 1.5rem;
+        padding-left: 2.5rem;
+        font-size: 1.8rem;
+    }
+    .contact-button{
+        position: relative;
+        bottom: 4rem;
+        left: 30rem;
+        width: 8rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
+    .contact-container>div:nth-child(2)>input::placeholder{
+        position: relative;
+        left: 0.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+    }
+    .contact-container>div:nth-child(3)>input::placeholder{
+        position: relative;
+        left: 0.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+    }
+    .contact-container>div:nth-child(4)>textarea::placeholder{
+        position: relative;
+        left: 0.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+    }
+    /*---------------------------*/
+
+    .contact-flex-container>div:last-child{
+        position: relative;
+        height: 40rem;
+        top: 53rem;
+        right: 35rem;
+    }
+    .contact-links>div:first-child{
+        position: relative;
+        bottom: 3rem;
+    }
+    .contact-links>div:nth-child(2){
+        position: relative;
+        top: 3rem;
+    }
+    .contact-links>div:nth-child(3){
+        position: relative;
+        top: 5rem;
+    }
+    .contact-links>div:last-child{
+        position: relative;
+        top: 7rem;
+    }
+    .contact-links>div:first-child>h2{
+        position: relative;
+        top: 3rem;
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+    }
 
 
 }
