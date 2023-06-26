@@ -16,7 +16,7 @@
     border: 0.2rem #01EFFF;
     border-style: solid solid none none;
     border-radius: 0 2rem 0 0;
-    width: 97%;
+    width: 96%;
     height: 60rem;
     top: 6.5rem;
     left: 2rem;
@@ -47,7 +47,7 @@
 .about-me-content{
     position: relative;
     flex-grow: 2;
-    border: 2px solid firebrick;
+    border: 1px solid blanchedalmond;
 }
 
 .profile-img-shadow{
@@ -65,7 +65,7 @@
     top: 3.5rem;
     left: 1.5rem;
 
-    background: radial-gradient(ellipse at bottom, #1a202d 0%, #121a26 100%);;
+    background: radial-gradient(ellipse at bottom, #1a202d 0%, #121a26 100%);
     width: 30rem;
     height: 42rem;
     border-radius: 20px 20px 20px 20px/20px 20px 20px 20px;
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    /*border: 0.2rem solid red;*/
+    border: 0.2rem solid red;
 }
 .quality-container>div{
     border: #01EFFF 0.1rem;
@@ -146,9 +146,11 @@
     font-size: 1.2rem;
 }
 
+/* ------------ about me content -------------- */
 
 .about-me-tag>h1{ /*about me*/
     position: absolute;
+    right: 0.5rem;
     color: white;
     font-size: 4.8rem;
     font-weight: bold;
@@ -537,35 +539,179 @@ span:nth-child(4){
         width: 71rem;
     }
 }
+
 @media all and (max-width: 425px){
+    #about-me{
+        height: 95rem;
+    }
+    .about-me-container{
+        width: 39rem;
+        height: 87rem;
+    }
     .profile-img-container {
         position: relative;
         top: 8rem;
-        left: 5rem;
+        left: 0.2rem;
         width: 72rem;
+        height: 40rem;
     }
     .profile-img-shadow{
         width: 20rem;
+        height: 29rem;
     }
-    .quality-container{
-        display: none;
+    .profile-img{
+        margin-left: -0.7rem;
+        margin-top: -0.5rem;
+        width: 20rem;
+        height: 27rem;
     }
-
+    .vihanga-img{
+        position: relative;
+        top: 1.5rem;
+        left: -0.3rem;
+        width: 20rem;
+        height: 24rem;
+    }
 
     .about-me-content {
-        display: none;
         position: relative;
-        top: 50rem;
-        right: 30rem;
-        width: 71rem;
+        top: 30rem;
+        right: 22rem;
+        width: 38rem;
+        height: 10rem;
+    }
+    .quality-container{
+        position: relative;
+        left: 17rem;
+        width: 22rem;
+        height: 35rem;
+    }
+    .quality-container>div{
+        position: relative;
+        top: 1rem;
+        width: 24.5rem;
+        height: 4rem;
+    }
+    .quality-plus-container{
+        position: relative;
+        top: -0.1rem;
+        left: 0.4rem;
+        width: 18px;
+        height: 18px;
+    }
+    .quality-content{
+        position: relative;
+        top: -3.5rem;
+        font-size: 1.6rem;
+    }
+    .links-container{
+        position: relative;
+        bottom: 1rem;
+        width: 18rem;
     }
 
-    .skill-anim-container {
-        display: none;
+    .links-container>div>a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .about-me-content>h2:first-child{ /*-------- Hello--------*/
         position: relative;
-        top: 50rem;
-        right: 30rem;
-        width: 71rem;
+        top: 8rem;
+        left: 1rem;
+        font-size: 1.8rem;
+        letter-spacing: 1.1rem;
+    }
+    .about-me-content>h2:nth-child(2){  /*---- I am ------*/
+        position: relative;
+        top: 9rem;
+        left: 1rem;
+        font-size: 2.4rem;
+        letter-spacing: 1.1rem;
+    }
+    .about-me-content>h2:nth-child(2)>b{   /* --------- MPS Vihanga --------*/
+        font-size: 2.4rem;
+        letter-spacing: 5px;
+    }
+
+    .anim-text{
+    position: absolute;
+        top: 17rem;
+        left: 1rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.anim-text>b{
+    font-size: 20px;
+    letter-spacing: 7px;
+}
+
+.anim-text b::before{
+    content: "";
+    color: #01EFFF;
+    animation: words 12s infinite;
+}
+
+.anim-text b::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    border-left: 2px solid #01EFFF;
+    right: -8px;
+    background-color: black;
+    animation: cursor 8s infinite, typing 20s steps(20) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #01EFFF;
+    }
+}
+@keyframes words {
+    0%,35%{
+        content: "Web Developer";
+    }
+    36%,70%{
+        content: "Android Developer";
+    }
+    71%,100%{
+        content: "Bloger";
+    }
+
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: 95%;
+    }
+}
+
+    .skill-anim-container {
+        /*display: none;*/
+        position: relative;
+        top: 1rem;
+        right: 22rem;
+        width: 38rem;
+    }
+    .anim-skills>div:first-child>div{
+        /*border: 1px solid hotpink;*/
+        width: 50px;
+        height: 100%;
+    }
+    .button-hover{
+        position: relative;
+        top: 1rem;
+        width: 13rem;
+        height: 4rem;
+        font-size: 1.5rem;
     }
 }
 

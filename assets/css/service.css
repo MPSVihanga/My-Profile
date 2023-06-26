@@ -338,7 +338,7 @@
 @media all and (min-width: 426px) and (max-width: 768px) {
 
     .service-bg{
-        background-size: 55% 70%;
+        background-size: 55% 60%;
         background-repeat: no-repeat;
         background-position:center top;
     }
@@ -350,10 +350,11 @@
         width: 23rem;
         margin-right: -9.5rem;
     }
+
 }
 
 @media all and (max-width: 425px){
-    .service-bg{
+    #service{
         display: none;
     }
 }
