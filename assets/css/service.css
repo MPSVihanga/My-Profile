@@ -97,7 +97,7 @@
     flex-grow: 3;
 }
 
-.card-01-heading {
+.card-01-heading { /* ------ WEB -------- */
     position: relative;
     font-size: 3rem;
     font-weight: bold;
@@ -113,7 +113,7 @@
     transform: translateZ(5rem);
 
 }
-.card-01-subheading{
+.card-01-subheading{ /* --------- Development ---------- */
     position: relative;
     font-size: 2.7rem;
     font-weight: bold;
@@ -129,7 +129,7 @@
     transform: translateZ(4rem);
 }
 
-.card-01-img>i{
+.card-01-img>i{ /* ------- card 01 Logo --------- */
     position: relative;
     font-size: 6rem;
     top: -0.8rem;
@@ -137,7 +137,7 @@
 
     transform: translateZ(2rem);
 }
-.web-items-info{
+.web-items-info{ /* -------- card 01 texts --------- */
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
@@ -239,6 +239,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*border: 1px solid red;*/
 }
 .service-info-container h3{
     font-family: 'Kalam', cursive;
@@ -354,7 +355,86 @@
 }
 
 @media all and (max-width: 425px){
-    #service{
-        display: none;
+    .service-bg{
+        background-image: none;
+        height: 62rem;
+    }
+    .bg-service-container{
+        width: 39rem;
+        height: 55rem;
+    }
+    .card-01{
+        position:relative;
+        top: 5rem;
+        left: -1rem;
+        width: 18rem;
+        height: 26rem;
+    }
+
+    .card-01-heading { /* ------ WEB -------- */
+        position: relative;
+        font-size: 2.7rem;
+        letter-spacing: 1rem;
+    }
+    .card-01-subheading{ /* --------- Development ---------- */
+        position: relative;
+        font-size: 2.2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .card-01-img>i{ /* ------- card 01 Logo --------- */
+        position: relative;
+        font-size: 4rem;
+        top: -0.8rem;
+        left: 37%;
+
+    }
+    .web-items-info{ /* -------- card 01 texts --------- */
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+    }
+    .card-02{
+        position:relative;
+        top: 5rem;
+        right: 0.6rem;
+        width: 18rem;
+        height: 26rem;
+    }
+
+    .card-02-heading { /* ------ ANDROID -------- */
+        position: relative;
+        font-size: 2.7rem;
+        letter-spacing: 0.7rem;
+    }
+    .card-02-subheading{ /* --------- Development ---------- */
+        position: relative;
+        font-size: 2.2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .card-02-img>i{ /* ------- card 02 Logo --------- */
+        position: relative;
+        font-size: 4.5rem;
+        top: -1.3rem;
+        left: 37%;
+    }
+    .android-items-info{ /* -------- card 02 texts --------- */
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .service-info-container{
+        position: relative;
+        top: -4rem;
+        right: 1rem;
+    }
+    .service-info-container h3{
+        font-size: 2.9rem;
+    }
+    .service-info-container>a>i{
+        position: relative;
+        top: 0.3rem;
+        left: 30px;
+        font-size: 30px;
     }
 }
