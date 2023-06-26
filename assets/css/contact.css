@@ -48,11 +48,11 @@
 }
 .contact-flex-container>div:first-child{
     flex-grow: 3;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 .contact-flex-container>div:last-child{
     flex-grow: 1;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 .contact-container{
     display: flex;
